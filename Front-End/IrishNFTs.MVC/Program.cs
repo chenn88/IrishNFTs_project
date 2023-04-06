@@ -1,29 +1,13 @@
-
+using IrishNFTs.MVC.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
-builder.Logging.ClearProviders();
-builder.Logging.AddConsole();
+builder.Services.AddHttpClient();
+builder.Services.AddScoped<IProductService, ProductService>();
 
-// builder.Services.AddCors(options =>
-// {
-//     options.AddDefaultPolicy(builder =>
-//     {
-//         builder.AllowAnyOrigin()
-//                .AllowAnyHeader()
-//                .AllowAnyMethod();
-//     });
-// });
-
-// builder.Services.AddHttpClient<IProductService, ProductService>(client =>
-// {
-
-//     client.BaseAddress = new Uri("http://localhost:5014");
-
-// });
 
 var app = builder.Build();
 

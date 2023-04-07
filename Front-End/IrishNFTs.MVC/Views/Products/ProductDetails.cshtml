@@ -1,9 +1,15 @@
 @model IrishNFTs.MVC.Models.ProductViewModel
 
 @{
-    ViewData["Title"] = "Product";
+    ViewData["Title"] = "Product Details";
 }
 
-<h1>@Model.Title</h1>
-<p>@Model.Description</p>
-<p>@Model.Price</p>
+<div class="w-50 mx-auto text-center">
+    <h1>Order Details Page</h1>
+    <h2>@Model.Title</h2>
+    <p>@Model.Description</p>
+    <p>@Model.Price</p>
+    <a href="@Url.Action("OrderSummary", "Orders", new { id = Model.ProductId })"
+        class="btn btn-sm btn-outline-secondary">Order This Product</a>
+
+</div>

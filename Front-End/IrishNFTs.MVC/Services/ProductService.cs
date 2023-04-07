@@ -6,7 +6,6 @@ using IrishNFTs.MVC.Models;
 using IrishNFTs.MVC.Controllers;
 using Newtonsoft.Json;
 using System.Text;
-// using System.Net.Http.Formatting;
 using Microsoft.AspNetCore.Mvc;
 
 namespace IrishNFTs.MVC.Services

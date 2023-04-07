@@ -85,7 +85,12 @@ namespace ProductsAPI.Controllers
             {
                 return Problem("Entity set 'ProductContext.Products'  is null.");
             }
+
+
             _context.Products.Add(product);
+
+
+
             await _context.SaveChangesAsync();
 
             return CreatedAtAction("GetProduct", new { id = product.ProductId }, product);

@@ -14,10 +14,10 @@ namespace IrishNFTs.MVC.Controllers
             _productService = productService;
         }
 
-        public async Task<ActionResult> Products()
+        public async Task<ActionResult> Index()
         {
             var products = await _productService.GetAllProducts();
-            return View("Products", products);
+            return View(products);
         }
 
         public async Task<ActionResult> ProductDetails(int id)
@@ -30,7 +30,7 @@ namespace IrishNFTs.MVC.Controllers
         public async Task<ActionResult> DeleteProduct(int id)
         {
             await _productService.DeleteProductById(id);
-            return RedirectToAction("Products");
+            return RedirectToAction("Index");
         }
 
         public ActionResult CreateProduct()

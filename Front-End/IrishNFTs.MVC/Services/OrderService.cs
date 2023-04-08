@@ -21,8 +21,9 @@ namespace IrishNFTs.MVC.Services
             _httpClient = httpClient;
         }
 
-        public async Task<OrderViewModel> CreateOrderAsync(OrderViewModel order)
+        public async Task<OrderViewModel> CreateOrderAsync(OrderViewModel order, string userId)
         {
+            order.UserId = userId;
             var response = await _httpClient.PostAsJsonAsync($"{OrdersApiUrl}", order);
             response.EnsureSuccessStatusCode();
             return await response.Content.ReadFromJsonAsync<OrderViewModel>();
@@ -37,7 +38,14 @@ namespace IrishNFTs.MVC.Services
             return order;
         }
 
-
+        public async Task<IEnumerable<OrderViewModel>> GetOrdersByUserId(string userId)
+        {
+            var response = await _httpClient.GetAsync($"{OrdersApiUrl}/user/{userId}");
+            response.EnsureSuccessStatusCode();
+            var ordersJson = await response.Content.ReadAsStringAsync();
+            var orders = JsonConvert.DeserializeObject<IEnumerable<OrderViewModel>>(ordersJson);
+            return orders;
+        }
     }
 
 

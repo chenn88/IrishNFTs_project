@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using IrishNFTs.MVC.Models;
 using IrishNFTs.MVC.Services;
+using System.Security.Claims;
 
 namespace IrishNFTs.MVC.Controllers
 {
@@ -27,19 +28,26 @@ namespace IrishNFTs.MVC.Controllers
         public async Task<IActionResult> CompleteOrder(OrderViewModel order)
 
         {
-
-            var createOrder = await _orderService.CreateOrderAsync(order);
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier)?.ToString();
+            var createOrder = await _orderService.CreateOrderAsync(order, userId);
             return RedirectToAction("OrderConfirmation", new { id = createOrder.OrderId });
 
         }
 
         public async Task<IActionResult> OrderConfirmation(int id)
         {
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
             var order = await _orderService.GetOrderById(id);
             return View(order);
 
         }
 
+        public async Task<IActionResult> MyOrders()
+        {
+            var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+            var orders = await _orderService.GetOrdersByUserId(userId);
+            return View(orders);
+        }
     }
 
 }

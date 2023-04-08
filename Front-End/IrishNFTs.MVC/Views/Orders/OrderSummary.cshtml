@@ -10,8 +10,6 @@
         <h1>@Model.Title</h1>
         <p>@Model.Description</p>
         <p>@Model.Price</p>
-        @* <a href="@Url.Action("CompleteOrder", "Orders", new { id = Model.ProductId })"
-        class="btn btn-sm btn-outline-secondary">Complete Ordere</a> *@
         <form method="post" action="@Url.Action("CompleteOrder", "Orders")">
             <input type="hidden" name="ProductId" value="@Model.ProductId" />
             <input type="hidden" name="OrderDate" value="@DateTime.Now" />

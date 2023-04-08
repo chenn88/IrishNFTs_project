@@ -1,6 +1,24 @@
+using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using IrishNFTs.MVC.Services;
+using IrishNFTs.MVC.Data;
 
 var builder = WebApplication.CreateBuilder(args);
+
+
+var connectionString = builder.Configuration.GetConnectionString("UserDbConnection") ?? throw new InvalidOperationException("Connection string 'UserDbConnecion' not found.");
+
+
+builder.Services.AddDbContext<UserDbContext>(options => options.UseSqlServer(connectionString));
+
+builder.Services.AddDefaultIdentity<IdentityUser>(options =>
+{
+    options.SignIn.RequireConfirmedAccount = true;
+})
+    .AddEntityFrameworkStores<UserDbContext>();
+
+
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
@@ -34,5 +52,7 @@ app.MapControllerRoute(
 
 var logger = app.Services.GetRequiredService<ILogger<Program>>();
 logger.LogInformation("Application started.");
+
+app.MapRazorPages();
 
 app.Run();

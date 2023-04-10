@@ -10,7 +10,7 @@ var builder = WebApplication.CreateBuilder(args);
 var connectionString = builder.Configuration.GetConnectionString("UserDbConnection") ?? throw new InvalidOperationException("Connection string 'UserDbConnecion' not found.");
 
 
-builder.Services.AddDbContext<UserDbContext>(options => options.UseSqlServer(connectionString));
+builder.Services.AddDbContext<UserDbContext>(options => options.UseSqlite(connectionString));
 
 builder.Services.AddDefaultIdentity<IdentityUser>(options =>
 {

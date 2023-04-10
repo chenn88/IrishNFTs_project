@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Sqlite;
 using ProductsAPI.Data;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -8,7 +9,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<ProductDbContext>(opt =>
 
 {
-    opt.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
+    opt.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
 
 

@@ -1,0 +1,37 @@
+@using Microsoft.AspNetCore.Identity
+
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+
+<div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+
+    <ul class="navbar-nav mx-auto">
+        @if (SignInManager.IsSignedIn(User))
+        {
+            <li class="nav-item">
+                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark" asp-area="" asp-controller="Products" asp-action="Index">Products</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Account">
+                    Account</a>
+            </li>
+        }
+
+        else
+
+        {
+
+            <li class="nav-item">
+                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark" asp-area="" asp-controller="Products" asp-action="Index">Products</a>
+            </li>
+
+        }
+
+    </ul>
+</div>

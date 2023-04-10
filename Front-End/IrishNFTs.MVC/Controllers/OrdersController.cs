@@ -2,9 +2,13 @@ using Microsoft.AspNetCore.Mvc;
 using IrishNFTs.MVC.Models;
 using IrishNFTs.MVC.Services;
 using System.Security.Claims;
+using Microsoft.AspNetCore.Authorization;
+
 
 namespace IrishNFTs.MVC.Controllers
 {
+
+    [Authorize]
     public class OrdersController : Controller
     {
         private readonly IProductService _productService;

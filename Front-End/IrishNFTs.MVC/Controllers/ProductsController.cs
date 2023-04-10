@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 using IrishNFTs.MVC.Models;
 using Newtonsoft.Json;
 using IrishNFTs.MVC.Services;
+using Microsoft.AspNetCore.Authorization;
 
 namespace IrishNFTs.MVC.Controllers
 {
@@ -27,18 +28,20 @@ namespace IrishNFTs.MVC.Controllers
         }
 
         [HttpPost]
+        [Authorize(Roles = "Administrator")]
         public async Task<ActionResult> DeleteProduct(int id)
         {
             await _productService.DeleteProductById(id);
             return RedirectToAction("Index");
         }
 
-        public ActionResult CreateProduct()
-        {
-            return View();
-        }
+        // public ActionResult CreateProduct()
+        // {
+        //     return View();
+        // }
 
         [HttpPost]
+        [Authorize(Roles = "Administrator")]
         public async Task<ActionResult> CreateProduct(ProductViewModel product)
         {
             if (!ModelState.IsValid)
@@ -50,6 +53,7 @@ namespace IrishNFTs.MVC.Controllers
             return RedirectToAction("Products");
         }
 
+        [Authorize(Roles = "Administrator")]
         public async Task<ActionResult> EditProduct(int id)
         {
             var product = await _productService.GetProductById(id);

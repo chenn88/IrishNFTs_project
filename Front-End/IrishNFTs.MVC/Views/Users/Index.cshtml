@@ -1,8 +1,14 @@
+@using Microsoft.AspNetCore.Identity
+
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+
+
 @{
-ViewData["Title"] = "User Accounts";
+    ViewData["Title"] = "User Accounts";
 
 }
 
 <div class="text-center">
-<h1 class="display-4">User Accounts</h1>
+    <h1 class="display-4">User Accounts</h1>
 </div>

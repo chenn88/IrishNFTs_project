@@ -13,6 +13,74 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\images\\antique-spoons.jpg",
+      "PackagePath": "staticwebassets\\images\\antique-spoons.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\images\\happy-clown.jpg",
+      "PackagePath": "staticwebassets\\images\\happy-clown.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\images\\lady-in-green-armchair.jpg",
+      "PackagePath": "staticwebassets\\images\\lady-in-green-armchair.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\images\\maiya.jpg",
+      "PackagePath": "staticwebassets\\images\\maiya.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\images\\marbles-on-blue-plate.jpg",
+      "PackagePath": "staticwebassets\\images\\marbles-on-blue-plate.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\images\\metal-mask.jpg",
+      "PackagePath": "staticwebassets\\images\\metal-mask.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\images\\mr-darcy.jpg",
+      "PackagePath": "staticwebassets\\images\\mr-darcy.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\images\\mystique.jpg",
+      "PackagePath": "staticwebassets\\images\\mystique.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\images\\new-york.jpg",
+      "PackagePath": "staticwebassets\\images\\new-york.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\images\\orchid.jpg",
+      "PackagePath": "staticwebassets\\images\\orchid.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\images\\red-stables-detail-st-annes-park.jpg",
+      "PackagePath": "staticwebassets\\images\\red-stables-detail-st-annes-park.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\images\\resonator-deconstructed.jpg",
+      "PackagePath": "staticwebassets\\images\\resonator-deconstructed.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\images\\spanish-doorway.jpg",
+      "PackagePath": "staticwebassets\\images\\spanish-doorway.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\images\\summer-cocktails.jpg",
+      "PackagePath": "staticwebassets\\images\\summer-cocktails.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\images\\the-aerialist.jpg",
+      "PackagePath": "staticwebassets\\images\\the-aerialist.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\images\\woman-with-a-fan.jpg",
+      "PackagePath": "staticwebassets\\images\\woman-with-a-fan.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\images\\yellow-buttons.jpg",
+      "PackagePath": "staticwebassets\\images\\yellow-buttons.jpg"
+    },
+    {
       "Id": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

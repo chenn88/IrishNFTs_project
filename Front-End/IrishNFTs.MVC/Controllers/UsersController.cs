@@ -8,6 +8,7 @@ namespace IrishNFTs.MVC.Controllers;
 public class UsersController : Controller
 {
 
+    // [Authorize(Roles = "Administrator")]
     public IActionResult Index()
     {
         return View();

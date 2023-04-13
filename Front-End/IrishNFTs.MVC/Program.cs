@@ -12,12 +12,9 @@ var connectionString = builder.Configuration.GetConnectionString("UserDbConnecti
 
 builder.Services.AddDbContext<UserDbContext>(options => options.UseSqlite(connectionString));
 
-builder.Services.AddDefaultIdentity<IdentityUser>(options =>
-{
-    options.SignIn.RequireConfirmedAccount = true;
-})
+builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
+    .AddRoles<IdentityRole>()
     .AddEntityFrameworkStores<UserDbContext>();
-
 
 
 // Add services to the container.

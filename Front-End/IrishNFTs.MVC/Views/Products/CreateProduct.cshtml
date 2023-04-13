@@ -1,0 +1,34 @@
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+@model IrishNFTs.MVC.Models.ProductViewModel
+
+@{
+    ViewData["Title"] = "Create Product";
+}
+
+<h1>Create Product</h1>
+
+<form asp-controller="Products" asp-action="CreateProduct" method="post">
+    <div class="form-group">
+        <label for="title">Title:</label>
+        <input type="text" class="form-control" id="title" name="Title" required>
+    </div>
+    <div class="form-group">
+        <label for="description">Description:</label>
+        <textarea class="form-control" id="description" name="Description" required></textarea>
+    </div>
+    <div class="form-group">
+        <label for="category">Category:</label>
+        <input type="text" class="form-control" id="category" name="Category" required>
+    </div>
+    <div class="form-group">
+        <label for="price">Price:</label>
+        <input type="number" class="form-control" id="price" name="Price" step="0.01" min="0" required>
+    </div>
+    <div class="form-group">
+        <label for="imgUrl">Image URL:</label>
+        <input type="text" class="form-control" id="imgUrl" name="ImgUrl" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Create Product</button>
+</form>

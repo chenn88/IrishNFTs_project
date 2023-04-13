@@ -1,5 +1,4 @@
 @using Microsoft.AspNetCore.Identity
-
 @inject SignInManager<IdentityUser> SignInManager
 @inject UserManager<IdentityUser> UserManager
 
@@ -15,8 +14,8 @@
                 <a class="nav-link text-dark" asp-area="" asp-controller="Products" asp-action="Index">Products</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Account">
-                    Account</a>
+                <a class="nav-link text-dark" asp-area="" asp-controller="Orders" asp-action="MyOrders">
+                    My Orders</a>
             </li>
         }
 

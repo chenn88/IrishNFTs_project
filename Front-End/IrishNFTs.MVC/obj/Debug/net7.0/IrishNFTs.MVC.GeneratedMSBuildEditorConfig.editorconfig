@@ -184,12 +184,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Ciaran/Projects/DBS-advanced-web/IrishNFTs/Front-End/IrishNFTs.MVC/Views/Orders/MyOrders.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJzXE15T3JkZXJzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Ciaran/Projects/DBS-advanced-web/IrishNFTs/Front-End/IrishNFTs.MVC/Views/Orders/OrderConfirmation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJzXE9yZGVyQ29uZmlybWF0aW9uLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Ciaran/Projects/DBS-advanced-web/IrishNFTs/Front-End/IrishNFTs.MVC/Views/Orders/OrderSummary.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJzXE9yZGVyU3VtbWFyeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ciaran/Projects/DBS-advanced-web/IrishNFTs/Front-End/IrishNFTs.MVC/Views/Products/CreateProduct.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcQ3JlYXRlUHJvZHVjdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Ciaran/Projects/DBS-advanced-web/IrishNFTs/Front-End/IrishNFTs.MVC/Views/Products/Index.cshtml]

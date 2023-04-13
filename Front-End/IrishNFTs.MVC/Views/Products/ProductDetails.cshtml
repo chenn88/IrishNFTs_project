@@ -5,10 +5,11 @@
 }
 
 <div class="w-50 mx-auto text-center">
-    <h1>Order Details Page</h1>
+    <h1>Product Details Page</h1>
     <h2>@Model.Title</h2>
     <p>@Model.Description</p>
     <p>@Model.Price</p>
+    @* <img href="@Model.imgurl"> *@
     <a href="@Url.Action("OrderSummary", "Orders", new { id = Model.ProductId })"
         class="btn btn-sm btn-outline-secondary">Order This Product</a>
 

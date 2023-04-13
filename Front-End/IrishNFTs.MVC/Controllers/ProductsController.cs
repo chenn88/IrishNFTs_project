@@ -35,22 +35,25 @@ namespace IrishNFTs.MVC.Controllers
             return RedirectToAction("Index");
         }
 
-        // public ActionResult CreateProduct()
-        // {
-        //     return View();
-        // }
+        [Authorize(Roles = "Administrator")]
+        public ActionResult CreateProduct()
+        {
+            return View();
+        }
 
         [HttpPost]
         [Authorize(Roles = "Administrator")]
         public async Task<ActionResult> CreateProduct(ProductViewModel product)
         {
-            if (!ModelState.IsValid)
+            if (ModelState.IsValid)
             {
-                return View(product);
+                product.InStock = true;
+                await _productService.CreateProduct(product);
+
             }
 
-            await _productService.CreateProduct(product);
-            return RedirectToAction("Products");
+
+            return RedirectToAction("Index");
         }
 
         [Authorize(Roles = "Administrator")]

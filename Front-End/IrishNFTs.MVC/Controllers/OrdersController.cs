@@ -33,7 +33,17 @@ namespace IrishNFTs.MVC.Controllers
 
         {
             var userId = User.FindFirstValue(ClaimTypes.NameIdentifier)?.ToString();
-            var createOrder = await _orderService.CreateOrderAsync(order, userId);
+            var orderDate = DateTime.Now;
+
+            var newOrder = new OrderViewModel
+            {
+                ProductId = order.ProductId,
+                OrderTotal = order.OrderTotal,
+                OrderDate = orderDate,
+                OrderCancellation = false
+            };
+
+            var createOrder = await _orderService.CreateOrderAsync(newOrder, userId);
             return RedirectToAction("OrderConfirmation", new { id = createOrder.OrderId });
 
         }

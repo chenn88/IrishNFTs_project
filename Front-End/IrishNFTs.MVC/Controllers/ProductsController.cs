@@ -63,16 +63,16 @@ namespace IrishNFTs.MVC.Controllers
             return View(product);
         }
 
-        [HttpPost]
-        public async Task<ActionResult> EditProduct(ProductViewModel product)
-        {
-            if (!ModelState.IsValid)
-            {
-                return View(product);
-            }
+        // [HttpPost]
+        // public async Task<ActionResult> EditProduct(ProductViewModel product)
+        // {
+        //     if (!ModelState.IsValid)
+        //     {
+        //         return View(product);
+        //     }
 
-            await _productService.UpdateProduct(product);
-            return RedirectToAction("Products");
-        }
+        //     await _productService.UpdateProduct(product);
+        //     return RedirectToAction("Products");
+        // }
     }
 }

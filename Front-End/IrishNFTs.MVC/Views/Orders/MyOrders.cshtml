@@ -31,8 +31,13 @@
                             <td>Complete</td>
 
                         }
-                        <td><button class="btn btn-primary">See Details</button></td>
-
+                        <td>
+                            @* <form method="post" asp-action="CancelOrder" asp-route-id="@order.OrderId">
+                        <button type="submit" class="btn btn-primary">Cancel Order</button>
+                        </form> *@
+                            <a class="btn btn-primary" asp-action="CancelOrder" asp-route-id="@order.OrderId">Cancel
+                                Order</a>
+                        </td>
                     </tr>
                 }
             </tbody>

@@ -46,6 +46,16 @@ namespace IrishNFTs.MVC.Services
             var orders = JsonConvert.DeserializeObject<IEnumerable<OrderViewModel>>(ordersJson);
             return orders;
         }
+
+        public async Task CancelOrderAsync(int orderId)
+        {
+            var OrderCancellation = true;
+            var orderCancellationStatus = new StringContent(JsonConvert.SerializeObject(OrderCancellation), Encoding.UTF8, "application/json");
+            var orderCancellationResponse = await _httpClient.PatchAsync($"{OrdersApiUrl}/{orderId}/OrderCancellation", orderCancellationStatus);
+            orderCancellationResponse.EnsureSuccessStatusCode();
+
+        }
+
     }
 
 

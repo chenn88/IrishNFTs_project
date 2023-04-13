@@ -3,6 +3,8 @@ using IrishNFTs.MVC.Models;
 using IrishNFTs.MVC.Services;
 using System.Security.Claims;
 using Microsoft.AspNetCore.Authorization;
+using Newtonsoft.Json;
+using System.Text;
 
 
 namespace IrishNFTs.MVC.Controllers
@@ -28,7 +30,6 @@ namespace IrishNFTs.MVC.Controllers
         }
 
         [HttpPost]
-
         public async Task<IActionResult> CompleteOrder(OrderViewModel order)
 
         {
@@ -44,9 +45,38 @@ namespace IrishNFTs.MVC.Controllers
             };
 
             var createOrder = await _orderService.CreateOrderAsync(newOrder, userId);
+
+
+            var inStock = false;
+            var inStockStatus = new StringContent(JsonConvert.SerializeObject(inStock), Encoding.UTF8, "application/json");
+            await _productService.UpdateProductStock(order.ProductId.ToString(), inStockStatus);
             return RedirectToAction("OrderConfirmation", new { id = createOrder.OrderId });
 
         }
+
+
+        public async Task<IActionResult> CancelOrder(int id)
+
+        {
+            var order = await _orderService.GetOrderById(id);
+            if (order == null)
+            {
+
+                return NotFound();
+            }
+
+            await _orderService.CancelOrderAsync(id);
+
+            var productId = order.ProductId.ToString();
+            var inStock = true;
+            var inStockStatus = new StringContent(JsonConvert.SerializeObject(inStock), Encoding.UTF8, "application/json");
+            await _productService.UpdateProductStock(order.ProductId.ToString(), inStockStatus);
+
+
+            return RedirectToAction("MyOrders");
+
+        }
+
 
         public async Task<IActionResult> OrderConfirmation(int id)
         {

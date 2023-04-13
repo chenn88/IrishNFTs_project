@@ -7,8 +7,8 @@ namespace IrishNFTs.MVC.Services
     {
         Task<OrderViewModel> CreateOrderAsync(OrderViewModel order, string userId);
         Task<OrderViewModel> GetOrderById(int id);
-
         Task<IEnumerable<OrderViewModel>> GetOrdersByUserId(string userId);
+        Task CancelOrderAsync(int id);
 
 
     }

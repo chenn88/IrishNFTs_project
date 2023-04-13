@@ -108,6 +108,24 @@ namespace OrdersAPI.Controllers
             return CreatedAtAction("GetOrder", new { id = order.OrderId }, order);
         }
 
+
+        [HttpPatch("{id}/OrderCancellation")]
+        public async Task<IActionResult> CancelOrder(int id, [FromBody] bool orderCancellation)
+        {
+            var order = await _context.Orders.FindAsync(id);
+            if (order == null)
+
+            {
+                return NotFound();
+            }
+
+            order.OrderCancellation = orderCancellation;
+            await _context.SaveChangesAsync();
+
+            return Ok();
+
+        }
+
         // DELETE: api/Orders/5
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteOrder(int id)

@@ -11,7 +11,8 @@ namespace IrishNFTs.MVC.Services
         Task<List<ProductViewModel>> GetAllProducts();
         Task<ProductViewModel> GetProductById(int id);
         Task<ProductViewModel> CreateProduct(ProductViewModel product);
-        Task UpdateProduct(ProductViewModel product);
+        // Task UpdateProduct(ProductViewModel product);
+        Task UpdateProductStock(string productId, StringContent content);
         Task DeleteProductById(int id);
     }
 }

@@ -96,6 +96,25 @@ namespace ProductsAPI.Controllers
             return CreatedAtAction("GetProduct", new { id = product.ProductId }, product);
         }
 
+
+        [HttpPatch("{id}/InStock")]
+        public async Task<IActionResult> UpdateProductStock(int id, [FromBody] bool inStock)
+        {
+            var product = await _context.Products.FindAsync(id);
+            if (product == null)
+
+            {
+                return NotFound();
+            }
+
+            product.InStock = inStock;
+            await _context.SaveChangesAsync();
+
+            return Ok();
+
+        }
+
+
         // DELETE: api/Product/5
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteProduct(int id)

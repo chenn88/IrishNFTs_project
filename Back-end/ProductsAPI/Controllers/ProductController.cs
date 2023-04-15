@@ -114,6 +114,81 @@ namespace ProductsAPI.Controllers
 
         }
 
+        [HttpPatch("{id}/Title")]
+        public async Task<IActionResult> UpdateProductTitle(int id, [FromBody] string title)
+        {
+            var product = await _context.Products.FindAsync(id);
+            if (product == null)
+
+            {
+                return NotFound();
+            }
+
+            product.Title = title;
+            await _context.SaveChangesAsync();
+
+            return Ok();
+        }
+
+        [HttpPatch("{id}/Price")]
+        public async Task<IActionResult> UpdateProductPrice(int id, [FromBody] decimal price)
+        {
+            var product = await _context.Products.FindAsync(id);
+            if (product == null)
+
+            {
+                return NotFound();
+            }
+            product.Price = price;
+            await _context.SaveChangesAsync();
+
+            return Ok();
+        }
+
+        [HttpPatch("{id}/Description")]
+        public async Task<IActionResult> UpdateProductDescription(int id, [FromBody] string description)
+        {
+            var product = await _context.Products.FindAsync(id);
+            if (product == null)
+
+            {
+                return NotFound();
+            }
+            product.Description = description;
+            await _context.SaveChangesAsync();
+
+            return Ok();
+        }
+
+        [HttpPatch("{id}/Category")]
+        public async Task<IActionResult> UpdateProductCategory(int id, [FromBody] string category)
+        {
+            var product = await _context.Products.FindAsync(id);
+            if (product == null)
+
+            {
+                return NotFound();
+            }
+            product.Category = category;
+            await _context.SaveChangesAsync();
+
+            return Ok();
+        }
+
+        [HttpPatch("{id}/ImgUrl")]
+        public async Task<IActionResult> UpdateProductImage(int id, [FromBody] string imgUrl)
+        {
+            var product = await _context.Products.FindAsync(id);
+            if (product == null)
+
+            {
+                return NotFound();
+            }
+            product.ImgUrl = imgUrl;
+            await _context.SaveChangesAsync();
+
+            return Ok();
+        }
 
         // DELETE: api/Product/5
         [HttpDelete("{id}")]

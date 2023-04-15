@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using IrishNFTs.MVC.Models;
 using Newtonsoft.Json;
+using System.Text;
 using IrishNFTs.MVC.Services;
 using Microsoft.AspNetCore.Authorization;
 
@@ -21,6 +22,13 @@ namespace IrishNFTs.MVC.Controllers
             return View(products);
         }
 
+        public async Task<ActionResult> ProductsAdmin()
+        {
+            var products = await _productService.GetAllProducts();
+            return View(products);
+
+        }
+
         public async Task<ActionResult> ProductDetails(int id)
         {
             var product = await _productService.GetProductById(id);
@@ -32,13 +40,14 @@ namespace IrishNFTs.MVC.Controllers
         public async Task<ActionResult> DeleteProduct(int id)
         {
             await _productService.DeleteProductById(id);
-            return RedirectToAction("Index");
+            return RedirectToAction("ProductsAdmin");
         }
 
         [Authorize(Roles = "Administrator")]
         public ActionResult CreateProduct()
         {
-            return View();
+
+            return RedirectToAction("ProductsAdmin");
         }
 
         [HttpPost]
@@ -53,7 +62,7 @@ namespace IrishNFTs.MVC.Controllers
             }
 
 
-            return RedirectToAction("Index");
+            return RedirectToAction("ProductsAdmin");
         }
 
         [Authorize(Roles = "Administrator")]
@@ -62,6 +71,60 @@ namespace IrishNFTs.MVC.Controllers
             var product = await _productService.GetProductById(id);
             return View(product);
         }
+
+
+        [Authorize(Roles = "Administrator")]
+        public async Task<IActionResult> UpdateProductTitle(int id, string title)
+        {
+
+            var content = new StringContent(JsonConvert.SerializeObject(title), Encoding.UTF8, "application/json");
+            await _productService.UpdateProductTitle(id.ToString(), content);
+            return RedirectToAction("ProductsAdmin");
+        }
+
+        [Authorize(Roles = "Administrator")]
+        public async Task<IActionResult> UpdateProductPrice(int id, string price)
+        {
+
+            var content = new StringContent(JsonConvert.SerializeObject(price), Encoding.UTF8, "application/json");
+            await _productService.UpdateProductPrice(id.ToString(), content);
+            return RedirectToAction("ProductsAdmin");
+        }
+
+        public async Task<IActionResult> UpdateProductDescription(int id, string description)
+        {
+
+            var content = new StringContent(JsonConvert.SerializeObject(description), Encoding.UTF8, "application/json");
+            await _productService.UpdateProductDescription(id.ToString(), content);
+            return RedirectToAction("ProductsAdmin");
+        }
+
+        public async Task<IActionResult> UpdateProductCategory(int id, string category)
+        {
+
+            var content = new StringContent(JsonConvert.SerializeObject(category), Encoding.UTF8, "application/json");
+            await _productService.UpdateProductCategory(id.ToString(), content);
+            return RedirectToAction("ProductsAdmin");
+        }
+
+        public async Task<IActionResult> UpdateProductImgUrl(int id, string ImgUrl)
+        {
+
+            var content = new StringContent(JsonConvert.SerializeObject(ImgUrl), Encoding.UTF8, "application/json");
+            await _productService.UpdateProductImgUrl(id.ToString(), content);
+            return RedirectToAction("ProductsAdmin");
+        }
+
+
+
+        // [Authorize(Roles = "Administrator")]
+        // public async Task<IActionResult> UpdateProductDescription(int id, string description)
+        // {
+
+        //     var content = new StringContent(JsonConvert.SerializeObject(description), Encoding.UTF8, "application/json");
+        //     await _productService.UpdateProductDescription(id.ToString(), content);
+        //     return RedirectToAction("ProductsAdmin");
+        // }
 
         // [HttpPost]
         // public async Task<ActionResult> EditProduct(ProductViewModel product)

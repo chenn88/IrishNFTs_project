@@ -2,43 +2,77 @@
     ViewData["Title"] = "Products";
 }
 
-<div class="album py-5 bg-body-tertiary">
-    <div class="container">
 
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+<div class="container-fluid">
 
+    <div class="row row-col-xs-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-4 g-1 my-3">
+        @foreach (var product in Model)
+        {
+            if (product.InStock == true)
 
-
-            @foreach (var product in Model)
             {
-                if (product.InStock == true)
+                var modalId = $"product-details-{product.ProductId}";
 
-                {
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <div class="card-body">
-                                <h5 class="card-title">@product.Title</h5>
-                                <p>@product.Description</p>
-                                <img class="img-fluid" src="@product.ImgUrl" alt="@product.Title" max-width="300"
-                                    max-height="300">
+                <div class="col">
+                    <div class="card shadow-sm" style="max-width: 300px;">
+                        <img class="img-fluid" src="@product.ImgUrl" alt="@product.Title" max-width="300" max-height="300">
+                        <div class="card-body">
+                            <h5 class="card-title">@product.Title</h5>
+                            <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#@modalId">
+                                See details
+                            </button>
+                            <a href="@Url.Action("OrderSummary", "Orders", new { id = product.ProductId })"
+                                class="btn btn-dark">Order Product</a>
 
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <a href="@Url.Action("ProductDetails", "Products", new { id = product.ProductId })"
-                                            class="btn btn-sm btn-outline-secondary">See details</a>
+                        </div>
+                    </div>
 
-                                        <form method="post" action="/Products/DeleteProduct">
-                                            <input type="hidden" name="id" value="@product.ProductId" />
-                                            <button type="submit" class="btn btn-sm btn-outline-secondary">Delete</button>
-                                        </form>
+                </div>
+
+                <div class="modal fade" id="@modalId" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title text-center" id="exampleModalLabel">@product.Title</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-12 col-lg-6 d-flex justify-content-center">
+                                            <img src="@product.ImgUrl" alt="@product.Title">
+                                        </div>
+                                        <div class="col-sm-12 col-md-12 col-lg-6 d-flex flex-column justify-content-between">
+                                            <div class="row">
+                                                <h5 class="text-center">@product.Title</h5>
+                                            </div>
+                                            <div class="row">
+                                                <p class="px-5">@product.Description</p>
+                                            </div>
+
+                                            <div class="row mx-auto w-50 my-5">
+                                                <div class="w-50 mx-auto text-center mb-5">
+                                                    <p class="product-detail-price">€@product.Price</p>
+                                                </div>
+                                                <button class="btn btn-lg btn-success" style="max-width: 300px;">Order
+                                                    Product</button>
+                                            </div>
+
+                                        </div>
                                     </div>
-
                                 </div>
+                            </div>
+
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
                             </div>
                         </div>
                     </div>
-                }
+                </div>
+
             }
-        </div>
+
+        }
     </div>
 </div>

@@ -77,3 +77,30 @@ body {
     margin-top: 70px;
   }
 }
+
+
+.img-fluid {
+
+  height: 300px;
+  max-width: 300px;
+  object-fit: cover;
+}
+
+.img-thumbnail {
+
+  height: 100px;
+  width: 100px;
+
+}
+
+.product-detail-price {
+
+  color: white;
+  border: solid white 1px;
+  background-color: red;
+  border-radius: 8px;
+  font-size: 22px;
+  font-weight: 300;
+
+
+}

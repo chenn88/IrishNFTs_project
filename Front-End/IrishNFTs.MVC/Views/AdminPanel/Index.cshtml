@@ -1,0 +1,54 @@
+@{
+  ViewData["Title"] = "Admin Panel";
+}
+<h1 class="text-center">ADMIN PANEL</h1>
+<div class="row">
+  <div class="col-sm-12 col-md-6 col-lg-4">
+    <div class="card" style="width: 18rem;">
+      <div class="card-header">
+        Users
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">View All</li>
+        <li class="list-group-item">Edit User</li>
+        <li class="list-group-item">A third item</li>
+      </ul>
+    </div>
+
+  </div>
+  <div class="col-sm-12 col-md-6 col-lg-4">
+
+    <div class="card" style="width: 18rem;">
+      <div class="card-header">
+        Products
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+          <a asp-area="" asp-controller="Products" asp-action="ProductsAdmin">View All Products</a>
+
+        </li>
+
+        <li class="list-group-item">
+          <a asp-area="" asp-controller="Products" asp-action="CreateProduct">Add Product</a>
+        </li>
+
+        <li class="list-group-item">Edit Product</li>
+      </ul>
+    </div>
+  </div>
+  <div class="col-sm-12 col-md-6 col-lg-4">
+
+    <div class="card" style="width: 18rem;">
+      <div class="card-header">
+        Orders
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">View All Orders</li>
+        <li class="list-group-item">p</li>
+        <li class="list-group-item">A third item</li>
+      </ul>
+    </div>
+  </div>
+
+
+</div>

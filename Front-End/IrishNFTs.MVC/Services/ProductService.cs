@@ -69,5 +69,35 @@ namespace IrishNFTs.MVC.Services
             var inStockResponse = await _httpClient.PatchAsync($"{ProductsApiUrl}/{productId}/InStock", content);
             inStockResponse.EnsureSuccessStatusCode();
         }
+
+        public async Task UpdateProductTitle(string productId, StringContent content)
+        {
+            var titleResponse = await _httpClient.PatchAsync($"{ProductsApiUrl}/{productId}/Title", content);
+            titleResponse.EnsureSuccessStatusCode();
+        }
+
+        public async Task UpdateProductPrice(string productId, StringContent content)
+        {
+            var priceResponse = await _httpClient.PatchAsync($"{ProductsApiUrl}/{productId}/Price", content);
+            priceResponse.EnsureSuccessStatusCode();
+        }
+
+        public async Task UpdateProductDescription(string productId, StringContent content)
+        {
+            var descriptionResponse = await _httpClient.PatchAsync($"{ProductsApiUrl}/{productId}/Description", content);
+            descriptionResponse.EnsureSuccessStatusCode();
+        }
+
+        public async Task UpdateProductCategory(string productId, StringContent content)
+        {
+            var categoryResponse = await _httpClient.PatchAsync($"{ProductsApiUrl}/{productId}/Category", content);
+            categoryResponse.EnsureSuccessStatusCode();
+        }
+
+        public async Task UpdateProductImgUrl(string productId, StringContent content)
+        {
+            var categoryResponse = await _httpClient.PatchAsync($"{ProductsApiUrl}/{productId}/ImgUrl", content);
+            categoryResponse.EnsureSuccessStatusCode();
+        }
     }
 }

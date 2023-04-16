@@ -12,6 +12,7 @@
                     <h2 class="card-title mb-4">Complete your order for @Model.Title below</h2>
                     <img class="order-page-img" src=@Model.ImgUrl>
                     <h3 class="product-order-price card-text mb-4">€@Model.Price</h3>
+
                     <form method="post" action="@Url.Action("CompleteOrder", "Orders")">
                         <input type="hidden" name="ProductId" value="@Model.ProductId" />
                         <input type="hidden" name="OrderTotal" value="@Model.Price" />
@@ -22,12 +23,12 @@
                                 <div class="card-info card-body">
                                     <div class="row mb-3">
                                         <div class="col-12">
-                                            <label for="paymentMethod">Payment Method</label>
+                                            <label for="paymentType">Payment Type</label>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="form-check">
-                                                <input class="form-check-input" type="radio" name="paymentMethod"
-                                                    id="creditCard" value="creditCard" checked>
+                                                <input class="form-check-input" type="radio" name="PaymentType"
+                                                    id="creditCard" value="Credit Card" checked>
                                                 <label class="form-check-label" for="creditCard">
                                                     Credit Card
                                                 </label>
@@ -35,8 +36,8 @@
                                         </div>
                                         <div class="col-md-6">
                                             <div class="form-check">
-                                                <input class="form-check-input" type="radio" name="paymentMethod"
-                                                    id="debitCard" value="debitCard">
+                                                <input class="form-check-input" type="radio" name="PaymentType"
+                                                    id="debitCard" value="Debit Card">
                                                 <label class="form-check-label" for="debitCard">
                                                     Debit Card
                                                 </label>
@@ -47,7 +48,7 @@
                                         <div class="col-md-6 mb-3">
                                             <label for="cardNumber">Card Number</label>
                                             <div class="input-group">
-                                                <input type="text" class="form-control" id="cardNumber"
+                                                <input type="text" class="form-control" name="CardNum" id="CardNum"
                                                     placeholder="Enter card number">
                                                 <div class="input-group-append">
                                                     <span class="input-group-text"><i
@@ -56,16 +57,16 @@
                                             </div>
                                         </div>
                                         <div class="col-md-6 mb-3">
-                                            <label for="cardName">Cardholder Name</label>
-                                            <input type="text" class="form-control" id="cardName"
-                                                placeholder="Enter cardholder name">
+                                            <label for="PaymentCardName">Cardholder Name</label>
+                                            <input type="text" name="PaymentCardName" class="form-control"
+                                                id="PaymentCardName" placeholder="Enter cardholder name">
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="col-md-6 mb-3">
                                             <label for="cardExpiry">Expiration Date</label>
                                             <div class="input-group">
-                                                <input type="text" class="form-control" id="cardExpiry"
+                                                <input type="text" class="form-control" name="CardExp" id="CardExp"
                                                     placeholder="MM / YY">
                                                 <div class="input-group-append">
                                                     <span class="input-group-text"><i class="bi bi-calendar"></i></span>
@@ -74,7 +75,7 @@
                                         </div>
                                         <div class="col-md-6 mb-3">
                                             <label for="cardCVC">CVC Code</label>
-                                            <input type="text" class="form-control" id="cardCVC"
+                                            <input type="text" class="form-control" name="CardCvv" id="CardCvv"
                                                 placeholder="Enter CVC code">
                                         </div>
                                     </div>

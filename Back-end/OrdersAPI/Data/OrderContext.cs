@@ -9,4 +9,8 @@ public class OrderDbContext : DbContext
     }
 
     public DbSet<Order> Orders { get; set; } = null!;
+    public DbSet<Payment> Payments { get; set; }
+
+
+
 }

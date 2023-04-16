@@ -16,10 +16,13 @@ namespace IrishNFTs.MVC.Controllers
         private readonly IProductService _productService;
         private readonly IOrderService _orderService;
 
-        public OrdersController(IProductService productService, IOrderService orderService)
+        private readonly IPaymentService _paymentService;
+
+        public OrdersController(IProductService productService, IOrderService orderService, IPaymentService paymentService)
         {
             _productService = productService;
             _orderService = orderService;
+            _paymentService = paymentService;
         }
 
         public async Task<IActionResult> OrderSummary(int id)
@@ -30,7 +33,7 @@ namespace IrishNFTs.MVC.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> CompleteOrder(OrderViewModel order)
+        public async Task<IActionResult> CompleteOrder(OrderViewModel order, PaymentViewModel payment)
 
         {
             var userId = User.FindFirstValue(ClaimTypes.NameIdentifier)?.ToString();
@@ -45,6 +48,20 @@ namespace IrishNFTs.MVC.Controllers
             };
 
             var createOrder = await _orderService.CreateOrderAsync(newOrder, userId);
+
+            var newPayment = new PaymentViewModel
+            {
+                OrderId = createOrder.OrderId,
+                PaymentType = payment.PaymentType,
+                PaymentCardName = payment.PaymentCardName,
+                CardNum = payment.CardNum,
+                CardExp = payment.CardExp,
+                CardCvv = payment.CardCvv,
+                PaymentAmount = order.OrderTotal,
+                PaymentVoid = false
+            };
+
+            await _paymentService.CreatePaymentAsync(newPayment, createOrder.OrderId);
 
 
             var inStock = false;
@@ -68,10 +85,20 @@ namespace IrishNFTs.MVC.Controllers
             await _orderService.CancelOrderAsync(id);
 
             var productId = order.ProductId.ToString();
+            var orderId = order.OrderId.ToString();
+
             var inStock = true;
             var inStockStatus = new StringContent(JsonConvert.SerializeObject(inStock), Encoding.UTF8, "application/json");
             await _productService.UpdateProductStock(order.ProductId.ToString(), inStockStatus);
+            var paymentVoid = true;
 
+            var payment = await _paymentService.GetPaymentByOrderId(orderId);
+            var paymentId = payment.PaymentId;
+
+
+
+            var paymentVoidStatus = new StringContent(JsonConvert.SerializeObject(paymentVoid), Encoding.UTF8, "application/json");
+            await _paymentService.UpdatePaymentVoid(paymentId.ToString(), paymentVoidStatus);
 
             return RedirectToAction("MyOrders");
 

@@ -94,7 +94,6 @@ namespace OrdersAPI.Controllers
         }
 
         // POST: api/Orders
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
         public async Task<ActionResult<Order>> PostOrder(Order order)
         {
@@ -107,6 +106,8 @@ namespace OrdersAPI.Controllers
 
             return CreatedAtAction("GetOrder", new { id = order.OrderId }, order);
         }
+
+
 
 
         [HttpPatch("{id}/OrderCancellation")]
@@ -150,5 +151,6 @@ namespace OrdersAPI.Controllers
         {
             return (_context.Orders?.Any(e => e.OrderId == id)).GetValueOrDefault();
         }
+
     }
 }

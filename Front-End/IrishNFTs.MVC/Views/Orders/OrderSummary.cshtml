@@ -4,20 +4,90 @@
     ViewData["Title"] = "Complete Order";
 }
 
-<div class="w-50 mx-auto text-center">
-    <h1>Complete order page</h1>
-    <div class="w-50 mx-auto text-center">
-        <h1>@Model.Title</h1>
-        <p>@Model.Description</p>
-        <p>@Model.Price</p>
-        <form method="post" action="@Url.Action("CompleteOrder", "Orders")">
-            <input type="hidden" name="ProductId" value="@Model.ProductId" />
-            <input type="hidden" name="OrderTotal" value="@Model.Price" />
-            <button type="submit" class="btn btn-primary">Complete Order</button>
-        </form>
+<div class="container">
+    <div class="row">
+        <div id="order-completion-window" class=" mx-auto">
+            <div class="card my-5">
+                <div class="card-body">
+                    <h2 class="card-title mb-4">Complete your order for @Model.Title below</h2>
+                    <img class="order-page-img" src=@Model.ImgUrl>
+                    <h3 class="product-order-price card-text mb-4">€@Model.Price</h3>
+                    <form method="post" action="@Url.Action("CompleteOrder", "Orders")">
+                        <input type="hidden" name="ProductId" value="@Model.ProductId" />
+                        <input type="hidden" name="OrderTotal" value="@Model.Price" />
 
+                        <div class="row">
+                            <h2 class="text-center my-5">Payment</h2>
+                            <div id="payment-info" class="card">
+                                <div class="card-info card-body">
+                                    <div class="row mb-3">
+                                        <div class="col-12">
+                                            <label for="paymentMethod">Payment Method</label>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="paymentMethod"
+                                                    id="creditCard" value="creditCard" checked>
+                                                <label class="form-check-label" for="creditCard">
+                                                    Credit Card
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="paymentMethod"
+                                                    id="debitCard" value="debitCard">
+                                                <label class="form-check-label" for="debitCard">
+                                                    Debit Card
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 mb-3">
+                                            <label for="cardNumber">Card Number</label>
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" id="cardNumber"
+                                                    placeholder="Enter card number">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text"><i
+                                                            class="bi bi-credit-card"></i></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <label for="cardName">Cardholder Name</label>
+                                            <input type="text" class="form-control" id="cardName"
+                                                placeholder="Enter cardholder name">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 mb-3">
+                                            <label for="cardExpiry">Expiration Date</label>
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" id="cardExpiry"
+                                                    placeholder="MM / YY">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text"><i class="bi bi-calendar"></i></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <label for="cardCVC">CVC Code</label>
+                                            <input type="text" class="form-control" id="cardCVC"
+                                                placeholder="Enter CVC code">
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <button type="submit" class="btn btn-lg btn-success w-100 mt-3">Complete
+                            Order</button>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
-
-
-
 </div>

@@ -88,10 +88,14 @@ namespace IrishNFTs.MVC.Controllers
 
         public async Task<IActionResult> MyOrders()
         {
+
             var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
             var orders = await _orderService.GetOrdersByUserId(userId);
+
             return View(orders);
         }
+
+
     }
 
 }

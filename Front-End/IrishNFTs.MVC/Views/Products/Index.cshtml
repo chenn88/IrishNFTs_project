@@ -14,23 +14,25 @@
                 var modalId = $"product-details-{product.ProductId}";
 
                 <div class="col">
-                    <div class="card shadow-sm" style="max-width: 300px;">
+                    <div class="card shadow-sm product-card">
                         <img class="img-fluid" src="@product.ImgUrl" alt="@product.Title" max-width="300" max-height="300">
                         <div class="card-body">
-                            <h5 class="card-title">@product.Title</h5>
-                            <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#@modalId">
-                                See details
-                            </button>
-                            <a href="@Url.Action("OrderSummary", "Orders", new { id = product.ProductId })"
-                                class="btn btn-dark">Order Product</a>
-
+                            <h5 class="product-card-title">@product.Title</h5>
+                            <div class="card-buttons mx-auto text-center">
+                                <button type="button" class="btn product-card-btn" data-bs-toggle="modal"
+                                    data-bs-target="#@modalId">
+                                    See details
+                                </button>
+                                <a href="@Url.Action("OrderSummary", "Orders", new { id = product.ProductId })"
+                                    class="btn product-card-btn">Order NFT</a>
+                            </div>
                         </div>
                     </div>
 
                 </div>
 
                 <div class="modal fade" id="@modalId" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-xl">
+                    <div class="modal-dialog modal-lg">
                         <div class="modal-content">
                             <div class="modal-header">
                                 <h5 class="modal-title text-center" id="exampleModalLabel">@product.Title</h5>
@@ -39,23 +41,16 @@
                             <div class="modal-body">
                                 <div class="container">
                                     <div class="row">
-                                        <div class="col-sm-12 col-md-12 col-lg-6 d-flex justify-content-center">
-                                            <img src="@product.ImgUrl" alt="@product.Title">
+                                        <div class="col-sm-12 col-md-6 d-flex justify-content-center mb-4">
+                                            <img src="@product.ImgUrl" alt="@product.Title" class="w-100">
                                         </div>
-                                        <div class="col-sm-12 col-md-12 col-lg-6 d-flex flex-column justify-content-between">
-                                            <div class="row">
-                                                <h5 class="text-center">@product.Title</h5>
-                                            </div>
-                                            <div class="row">
-                                                <p class="px-5">@product.Description</p>
-                                            </div>
-
-                                            <div class="row mx-auto w-50 my-5">
-                                                <div class="w-50 mx-auto text-center mb-5">
-                                                    <p class="product-detail-price">€@product.Price</p>
-                                                </div>
-                                                <button class="btn btn-lg btn-success" style="max-width: 300px;">Order
-                                                    Product</button>
+                                        <div class="col-sm-12 col-md-6 d-flex flex-column justify-content-between">
+                                            <h2 class="mb-4">@product.Title</h2>
+                                            <p class="mb-4">@product.Description</p>
+                                            <div class="d-flex flex-column justify-content-center mb-4">
+                                                <h3 class="product-detail-price w-50 mx-auto">€@product.Price</h3>
+                                                <a href="@Url.Action("OrderSummary", "Orders", new { id = product.ProductId })"
+                                                    class="btn product-details-order-btn">Order Product</a>
                                             </div>
 
                                         </div>

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ncW/shnAsKXXk8PDj40tnbJd6ImcvXvZtAlPyLSH3jk=",
+  "Hash": "OH900mWunNmBeWM5Hup5r87jd6NZJOoasWka/uWc/RY=",
   "Source": "IrishNFTs.MVC",
   "BasePath": "_content/IrishNFTs.MVC",
   "Mode": "Default",
@@ -1137,6 +1137,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\happy-clown.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\images\\irish-nfts-logo.jpg",
+      "SourceId": "IrishNFTs.MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\",
+      "BasePath": "_content/IrishNFTs.MVC",
+      "RelativePath": "images/irish-nfts-logo.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\irish-nfts-logo.jpg"
     },
     {
       "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\images\\lady-in-green-armchair.jpg",

@@ -12,7 +12,7 @@ namespace IrishNFTs.MVC.Services
 {
     public class ProductService : IProductService
     {
-        private const string ProductsApiUrl = "http://localhost:5014/api/Product";
+        private const string ProductsApiUrl = "http://productsapi:5014/api/Product";
         private readonly HttpClient _httpClient;
 
         public ProductService(HttpClient httpClient)
@@ -96,8 +96,8 @@ namespace IrishNFTs.MVC.Services
 
         public async Task UpdateProductImgUrl(string productId, StringContent content)
         {
-            var categoryResponse = await _httpClient.PatchAsync($"{ProductsApiUrl}/{productId}/ImgUrl", content);
-            categoryResponse.EnsureSuccessStatusCode();
+            var imgUrlResponse = await _httpClient.PatchAsync($"{ProductsApiUrl}/{productId}/ImgUrl", content);
+            imgUrlResponse.EnsureSuccessStatusCode();
         }
     }
 }

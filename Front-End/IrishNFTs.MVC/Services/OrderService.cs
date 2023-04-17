@@ -12,7 +12,7 @@ namespace IrishNFTs.MVC.Services
 {
     public class OrderService : IOrderService
     {
-        private const string OrdersApiUrl = "http://localhost:5052/api/Orders";
+        private const string OrdersApiUrl = "http://ordersapi:5052/api/Orders";
         private readonly HttpClient _httpClient;
 
 

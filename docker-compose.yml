@@ -1,0 +1,44 @@
+version: '3.8'
+
+services:
+  irishnfts:
+    build: ./Front-End/IrishNFTs.MVC
+    image: irishnfts:mvc
+    container_name: irishnfts_mvc
+    ports:
+      - "5069:5069"
+    depends_on:
+      - productsapi
+      - ordersapi
+    volumes:
+      - type: bind
+        source: ./Front-End/IrishNFTs.MVC/user.db
+        target: /app/user.db
+      - ./Front-End/IrishNFTs.MVC/Data:/app/Data
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+
+  productsapi:
+    build: ./Back-end/ProductsAPI
+    image: irishnfts:productsapi
+    container_name: irishnfts_productsapi
+    ports:
+      - "5014:5014"
+    volumes:
+      - type: bind
+        source: ./Back-End/ProductsAPI/product.db
+        target: /app/product.db
+      - ./Back-End/ProductsAPI/Data:/app/Data
+
+  ordersapi:
+    build: ./Back-end/OrdersAPI
+    image: irishnfts:ordersapi
+    container_name: irishnfts_ordersapi
+    ports:
+      - "5052:5052"
+
+    volumes:
+      - type: bind
+        source: ./Back-End/OrdersAPI/order.db
+        target: /app/order.db
+      - ./Back-End/OrdersAPI/Data:/app/Data

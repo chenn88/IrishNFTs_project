@@ -9,6 +9,8 @@ namespace IrishNFTs.MVC.Data
         public UserDbContext(DbContextOptions<UserDbContext> options)
             : base(options)
         {
+            Database.ExecuteSqlRaw("PRAGMA synchronous = FULL;");
+            Database.ExecuteSqlRaw("PRAGMA journal_mode = WAL;");
         }
 
         protected override void OnModelCreating(ModelBuilder builder)

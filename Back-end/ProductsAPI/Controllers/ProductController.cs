@@ -176,7 +176,7 @@ namespace ProductsAPI.Controllers
         }
 
         [HttpPatch("{id}/ImgUrl")]
-        public async Task<IActionResult> UpdateProductImage(int id, [FromBody] string imgUrl)
+        public async Task<IActionResult> UpdateProductImgUrl(int id, [FromBody] string imgUrl)
         {
             var product = await _context.Products.FindAsync(id);
             if (product == null)

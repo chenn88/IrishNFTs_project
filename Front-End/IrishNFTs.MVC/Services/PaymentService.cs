@@ -12,7 +12,7 @@ namespace IrishNFTs.MVC.Services
 {
     public class PaymentService : IPaymentService
     {
-        private const string PaymentsApiUrl = "http://localhost:5052/api/Payments";
+        private const string OrdersApiUrl = "http://ordersapi:5052/api/Payments";
         private readonly HttpClient _httpClient;
 
 
@@ -24,14 +24,14 @@ namespace IrishNFTs.MVC.Services
         public async Task<PaymentViewModel> CreatePaymentAsync(PaymentViewModel payment, int orderId)
         {
             payment.OrderId = orderId;
-            var response = await _httpClient.PostAsJsonAsync($"{PaymentsApiUrl}", payment);
+            var response = await _httpClient.PostAsJsonAsync($"{OrdersApiUrl}", payment);
             response.EnsureSuccessStatusCode();
             return await response.Content.ReadFromJsonAsync<PaymentViewModel>();
         }
 
         public async Task<PaymentViewModel> GetPaymentByOrderId(string orderId)
         {
-            var response = await _httpClient.GetAsync($"{PaymentsApiUrl}/order/{orderId}");
+            var response = await _httpClient.GetAsync($"{OrdersApiUrl}/order/{orderId}");
             response.EnsureSuccessStatusCode();
             var paymentJson = await response.Content.ReadAsStringAsync();
             var payment = JsonConvert.DeserializeObject<PaymentViewModel>(paymentJson);
@@ -40,7 +40,7 @@ namespace IrishNFTs.MVC.Services
 
         public async Task UpdatePaymentVoid(string paymentId, StringContent content)
         {
-            var paymentVoidResponse = await _httpClient.PatchAsync($"{PaymentsApiUrl}/{paymentId}/PaymentVoid", content);
+            var paymentVoidResponse = await _httpClient.PatchAsync($"{OrdersApiUrl}/{paymentId}/PaymentVoid", content);
             paymentVoidResponse.EnsureSuccessStatusCode();
         }
 

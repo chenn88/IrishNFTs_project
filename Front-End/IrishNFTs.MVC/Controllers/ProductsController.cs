@@ -107,10 +107,10 @@ namespace IrishNFTs.MVC.Controllers
             return RedirectToAction("ProductsAdmin");
         }
 
-        public async Task<IActionResult> UpdateProductImgUrl(int id, string ImgUrl)
+        public async Task<IActionResult> UpdateProductImgUrl(int id, string imgUrl)
         {
 
-            var content = new StringContent(JsonConvert.SerializeObject(ImgUrl), Encoding.UTF8, "application/json");
+            var content = new StringContent(JsonConvert.SerializeObject(imgUrl), Encoding.UTF8, "application/json");
             await _productService.UpdateProductImgUrl(id.ToString(), content);
             return RedirectToAction("ProductsAdmin");
         }

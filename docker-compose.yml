@@ -1,8 +1,12 @@
 version: '3.8'
 
+networks:
+  irish-nfts:
+    driver: bridge
+
 services:
   irishnfts:
-    build: ./Front-End/IrishNFTs.MVC
+    build: ./front-end/IrishNFTs.MVC
     image: irishnfts:mvc
     container_name: irishnfts_mvc
     ports:
@@ -10,35 +14,38 @@ services:
     depends_on:
       - productsapi
       - ordersapi
-    volumes:
-      - type: bind
-        source: ./Front-End/IrishNFTs.MVC/user.db
-        target: /app/user.db
-      - ./Front-End/IrishNFTs.MVC/Data:/app/Data
+
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
+    networks:
+      - irish-nfts
 
   productsapi:
-    build: ./Back-end/ProductsAPI
+    build: ./back-end/ProductsAPI
     image: irishnfts:productsapi
     container_name: irishnfts_productsapi
     ports:
       - "5014:5014"
-    volumes:
-      - type: bind
-        source: ./Back-End/ProductsAPI/product.db
-        target: /app/product.db
-      - ./Back-End/ProductsAPI/Data:/app/Data
+    networks:
+      - irish-nfts
 
   ordersapi:
-    build: ./Back-end/OrdersAPI
+    build: ./back-end/OrdersAPI
     image: irishnfts:ordersapi
     container_name: irishnfts_ordersapi
     ports:
       - "5052:5052"
 
-    volumes:
-      - type: bind
-        source: ./Back-End/OrdersAPI/order.db
-        target: /app/order.db
-      - ./Back-End/OrdersAPI/Data:/app/Data
+    networks:
+      - irish-nfts
+
+  sqlserver:
+    image: "mcr.microsoft.com/mssql/server:2022-latest"
+    container_name: irish_nfts_sqlserver
+    ports:
+      - "1433:1433"
+    environment:
+      SA_PASSWORD: "!rishNFTs2023$"
+      ACCEPT_EULA: "Y"
+    networks:
+      - irish-nfts

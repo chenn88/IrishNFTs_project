@@ -9,7 +9,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<ProductDbContext>(opt =>
 
 {
-    opt.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection"));
+    opt.UseSqlServer(builder.Configuration.GetConnectionString("ProductDbConnection"));
 });
 
 

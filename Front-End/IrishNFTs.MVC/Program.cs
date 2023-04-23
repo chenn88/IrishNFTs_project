@@ -10,7 +10,7 @@ var builder = WebApplication.CreateBuilder(args);
 var connectionString = builder.Configuration.GetConnectionString("UserDbConnection") ?? throw new InvalidOperationException("Connection string 'UserDbConnecion' not found.");
 
 
-builder.Services.AddDbContext<UserDbContext>(options => options.UseSqlite(connectionString));
+builder.Services.AddDbContext<UserDbContext>(options => options.UseSqlServer(connectionString));
 
 builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
     .AddRoles<IdentityRole>()
@@ -19,7 +19,6 @@ builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.Requ
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-
 builder.Services.AddHttpClient();
 builder.Services.AddScoped<IProductService, ProductService>();
 builder.Services.AddScoped<IOrderService, OrderService>();
@@ -52,5 +51,6 @@ var logger = app.Services.GetRequiredService<ILogger<Program>>();
 logger.LogInformation("Application started.");
 
 app.MapRazorPages();
+
 
 app.Run();

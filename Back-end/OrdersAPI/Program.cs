@@ -1,5 +1,4 @@
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Sqlite;
 using OrdersAPI.Models;
 
 
@@ -12,7 +11,7 @@ builder.Services.AddControllers();
 builder.Services.AddDbContext<OrderDbContext>(opt =>
 
 {
-    opt.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection"));
+    opt.UseSqlServer(builder.Configuration.GetConnectionString("OrderDbConnection"));
 });
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

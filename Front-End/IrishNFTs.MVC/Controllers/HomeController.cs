@@ -18,11 +18,6 @@ public class HomeController : Controller
         return View();
     }
 
-    // public IActionResult Products()
-
-    // {
-    //     return RedirectToAction("Index", products);
-    // }
 
     public IActionResult Account()
     {

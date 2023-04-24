@@ -113,15 +113,40 @@ namespace IrishNFTs.MVC.Controllers
 
         }
 
+        // public async Task<IActionResult> MyOrders()
+        // {
+
+        //     var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+        //     var orders = await _orderService.GetOrdersByUserId(userId);
+
+        //     return View(orders);
+        // }
+
         public async Task<IActionResult> MyOrders()
         {
-
             var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
             var orders = await _orderService.GetOrdersByUserId(userId);
 
-            return View(orders);
-        }
+            var orderProductList = new List<OrderProductViewModel>();
 
+            foreach (var order in orders)
+            {
+                var product = await _productService.GetProductById(order.ProductId);
+
+                orderProductList.Add(new OrderProductViewModel
+                {
+                    Order = order,
+                    Product = product
+                });
+            }
+
+            var viewModel = new OrderDetailViewModel
+            {
+                OrderProductList = orderProductList
+            };
+
+            return View(viewModel);
+        }
 
     }
 

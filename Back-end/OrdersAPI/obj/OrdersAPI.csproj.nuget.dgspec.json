@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Back-end\\OrdersAPI\\OrdersAPI.csproj": {}
+    "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\back-end\\OrdersAPI\\OrdersAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Back-end\\OrdersAPI\\OrdersAPI.csproj": {
+    "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\back-end\\OrdersAPI\\OrdersAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Back-end\\OrdersAPI\\OrdersAPI.csproj",
+        "projectUniqueName": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\back-end\\OrdersAPI\\OrdersAPI.csproj",
         "projectName": "OrdersAPI",
-        "projectPath": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Back-end\\OrdersAPI\\OrdersAPI.csproj",
+        "projectPath": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\back-end\\OrdersAPI\\OrdersAPI.csproj",
         "packagesPath": "C:\\Users\\Ciaran\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Back-end\\OrdersAPI\\obj\\",
+        "outputPath": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\back-end\\OrdersAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Ciaran\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -11027,11 +11027,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\IrishNFTs.MVC.csproj",
+      "projectUniqueName": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\IrishNFTs.MVC.csproj",
       "projectName": "IrishNFTs.MVC",
-      "projectPath": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\IrishNFTs.MVC.csproj",
+      "projectPath": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\IrishNFTs.MVC.csproj",
       "packagesPath": "C:\\Users\\Ciaran\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\obj\\",
+      "outputPath": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Ciaran\\AppData\\Roaming\\NuGet\\NuGet.Config",

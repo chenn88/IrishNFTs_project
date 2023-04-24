@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "WbQm+viV0Rihppz8P0jFqgx4OVlrWbqE9apI0tNdCFLMGV7oJ36BL/bcaCTG+tmD/aEhaMYfnA35BO2lGiGR3g==",
+  "dgSpecHash": "40oOE1VOxoK/USiReszAAADP365kgbsTedufWS0C9HH0Jxr1T2gq6SwZMpHJfiufHdN96rdDy3V0YlkkAUrMmw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Back-end\\ProductsAPI\\ProductsAPI.csproj",
+  "projectFilePath": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\back-end\\ProductsAPI\\ProductsAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Ciaran\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Ciaran\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

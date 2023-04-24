@@ -36,14 +36,14 @@ namespace IrishNFTs.MVC.Controllers
         }
 
         [HttpPost]
-        [Authorize(Roles = "Administrator")]
+        [Authorize(Roles = "Admin")]
         public async Task<ActionResult> DeleteProduct(int id)
         {
             await _productService.DeleteProductById(id);
             return RedirectToAction("ProductsAdmin");
         }
 
-        [Authorize(Roles = "Administrator")]
+        [Authorize(Roles = "Admin")]
         public ActionResult CreateProduct()
         {
 
@@ -51,7 +51,7 @@ namespace IrishNFTs.MVC.Controllers
         }
 
         [HttpPost]
-        [Authorize(Roles = "Administrator")]
+        [Authorize(Roles = "Admin")]
         public async Task<ActionResult> CreateProduct(ProductViewModel product)
         {
             if (ModelState.IsValid)
@@ -65,7 +65,7 @@ namespace IrishNFTs.MVC.Controllers
             return RedirectToAction("ProductsAdmin");
         }
 
-        [Authorize(Roles = "Administrator")]
+        [Authorize(Roles = "Admin")]
         public async Task<ActionResult> EditProduct(int id)
         {
             var product = await _productService.GetProductById(id);
@@ -73,7 +73,7 @@ namespace IrishNFTs.MVC.Controllers
         }
 
 
-        [Authorize(Roles = "Administrator")]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> UpdateProductTitle(int id, string title)
         {
 
@@ -82,7 +82,7 @@ namespace IrishNFTs.MVC.Controllers
             return RedirectToAction("ProductsAdmin");
         }
 
-        [Authorize(Roles = "Administrator")]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> UpdateProductPrice(int id, string price)
         {
 
@@ -90,7 +90,7 @@ namespace IrishNFTs.MVC.Controllers
             await _productService.UpdateProductPrice(id.ToString(), content);
             return RedirectToAction("ProductsAdmin");
         }
-
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> UpdateProductDescription(int id, string description)
         {
 
@@ -98,7 +98,7 @@ namespace IrishNFTs.MVC.Controllers
             await _productService.UpdateProductDescription(id.ToString(), content);
             return RedirectToAction("ProductsAdmin");
         }
-
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> UpdateProductCategory(int id, string category)
         {
 
@@ -106,7 +106,7 @@ namespace IrishNFTs.MVC.Controllers
             await _productService.UpdateProductCategory(id.ToString(), content);
             return RedirectToAction("ProductsAdmin");
         }
-
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> UpdateProductImgUrl(int id, string imgUrl)
         {
 

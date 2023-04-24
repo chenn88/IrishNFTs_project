@@ -8,20 +8,20 @@ namespace IrishNFTs.MVC.Controllers;
 public class AdminPanelController : Controller
 {
 
-    [Authorize(Roles = "Administrator")]
+    [Authorize(Roles = "Admin")]
     public IActionResult Index()
     {
         return View();
     }
 
 
-    [Authorize(Roles = "Administrator")]
+    [Authorize(Roles = "Admin")]
     public IActionResult ProductsAdmin()
     {
         return View();
     }
 
-    [Authorize(Roles = "Administrator")]
+    [Authorize(Roles = "Admin")]
     public IActionResult EditUsers()
     {
         return View();

@@ -1,8 +1,22 @@
+@model IrishNFTs.MVC.Models.OrderDetailViewModel
 @{
     ViewData["Title"] = "My Orders";
 }
 
+
+
+
 <h1 class="text-center">My Orders</h1>
+@* @foreach (var item in Model.OrderProductList)
+{
+<h2>Order Details</h2>
+<p>Order ID: @item.Order.OrderId</p>
+<p>Product ID: @item.Product.ProductId</p>
+<p>Product Name: @item.Product.Title</p>
+<p>Product Description: @item.Product.Description</p>
+} *@
+
+
 <div class="row">
     <div class=text-center>
         <table class="w-100">
@@ -18,14 +32,17 @@
             </thead>
             <tbody>
 
-                @foreach (var order in Model)
+                @foreach (var item in Model.OrderProductList)
                 {
                     <tr>
-                        <td>@order.OrderId</td>
-                        <td>@order.OrderDate.ToString("dd-MM-yyyy")</td>
-                        <td></td>
-                        <td>€@order.OrderTotal.ToString("N2")</td>
-                        @if (order.OrderCancellation)
+                        <td>@item.Order.OrderId</td>
+                        <td>@item.Order.OrderDate.ToString("dd-MM-yyyy")</td>
+                        <td>
+                            <h6>@item.Product.Title</h6>
+                            <img class="img-thumbnail" src=" @item.Product.ImgUrl">
+                        </td>
+                        <td>€@item.Order.OrderTotal.ToString("N2")</td>
+                        @if (@item.Order.OrderCancellation)
                         {
                             <td>Cancelled</td>
                         }
@@ -36,13 +53,14 @@
 
                         }
                         <td>
-                            @if (order.OrderCancellation)
+                            @if (item.Order.OrderCancellation)
                             {
-                                <a class="btn btn-danger" asp-action="CancelOrder" asp-route-id="@order.OrderId">Cancelled</a>
+                                <a class="btn btn-danger" asp-action="CancelOrder"
+                                    asp-route-id="@item.Order.OrderId">Cancelled</a>
                             }
                             else
                             {
-                                <a class="btn btn-success" asp-action="CancelOrder" asp-route-id="@order.OrderId">Cancel
+                                <a class="btn btn-success" asp-action="CancelOrder" asp-route-id="@item.Order.OrderId">Cancel
                                     Order</a>
                             }
                         </td>
@@ -52,3 +70,4 @@
         </table>
     </div>
 </div>
+

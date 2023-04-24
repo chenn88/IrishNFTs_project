@@ -11311,11 +11311,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Back-end\\ProductsAPI\\ProductsAPI.csproj",
+      "projectUniqueName": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\back-end\\ProductsAPI\\ProductsAPI.csproj",
       "projectName": "ProductsAPI",
-      "projectPath": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Back-end\\ProductsAPI\\ProductsAPI.csproj",
+      "projectPath": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\back-end\\ProductsAPI\\ProductsAPI.csproj",
       "packagesPath": "C:\\Users\\Ciaran\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Back-end\\ProductsAPI\\obj\\",
+      "outputPath": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\back-end\\ProductsAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Ciaran\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "OH900mWunNmBeWM5Hup5r87jd6NZJOoasWka/uWc/RY=",
+  "Hash": "oh4xQfxspiM9cWBrRf0zM6jW8eZdUk4bJhBqW0qHK+4=",
   "Source": "IrishNFTs.MVC",
   "BasePath": "_content/IrishNFTs.MVC",
   "Mode": "Default",
@@ -10,7 +10,7 @@
     {
       "Name": "IrishNFTs.MVC\\wwwroot",
       "Source": "IrishNFTs.MVC",
-      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\",
       "BasePath": "_content/IrishNFTs.MVC",
       "Pattern": "**"
     }
@@ -1037,10 +1037,10 @@
       "OriginalItemSpec": "C:\\Users\\Ciaran\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.4\\staticwebassets\\V5\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\obj\\Debug\\net7.0\\scopedcss\\bundle\\IrishNFTs.MVC.styles.css",
+      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\obj\\Debug\\net7.0\\scopedcss\\bundle\\IrishNFTs.MVC.styles.css",
       "SourceId": "IrishNFTs.MVC",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\obj\\Debug\\net7.0\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\obj\\Debug\\net7.0\\scopedcss\\bundle\\",
       "BasePath": "_content/IrishNFTs.MVC",
       "RelativePath": "IrishNFTs.MVC.styles.css",
       "AssetKind": "All",
@@ -1051,13 +1051,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\obj\\Debug\\net7.0\\scopedcss\\bundle\\IrishNFTs.MVC.styles.css"
+      "OriginalItemSpec": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\obj\\Debug\\net7.0\\scopedcss\\bundle\\IrishNFTs.MVC.styles.css"
     },
     {
-      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\IrishNFTs.MVC.bundle.scp.css",
+      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\IrishNFTs.MVC.bundle.scp.css",
       "SourceId": "IrishNFTs.MVC",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/IrishNFTs.MVC",
       "RelativePath": "IrishNFTs.MVC.bundle.scp.css",
       "AssetKind": "All",
@@ -1068,13 +1068,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\IrishNFTs.MVC.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\IrishNFTs.MVC.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\css\\site.css",
+      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\css\\site.css",
       "SourceId": "IrishNFTs.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\",
       "BasePath": "_content/IrishNFTs.MVC",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -1088,10 +1088,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\favicon.ico",
+      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\favicon.ico",
       "SourceId": "IrishNFTs.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\",
       "BasePath": "_content/IrishNFTs.MVC",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -1105,10 +1105,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\images\\antique-spoons.jpg",
+      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\images\\antique-spoons.jpg",
       "SourceId": "IrishNFTs.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\",
       "BasePath": "_content/IrishNFTs.MVC",
       "RelativePath": "images/antique-spoons.jpg",
       "AssetKind": "All",
@@ -1122,10 +1122,27 @@
       "OriginalItemSpec": "wwwroot\\images\\antique-spoons.jpg"
     },
     {
-      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\images\\happy-clown.jpg",
+      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\images\\cover-image.jpg",
       "SourceId": "IrishNFTs.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\",
+      "BasePath": "_content/IrishNFTs.MVC",
+      "RelativePath": "images/cover-image.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\cover-image.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\images\\happy-clown.jpg",
+      "SourceId": "IrishNFTs.MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\",
       "BasePath": "_content/IrishNFTs.MVC",
       "RelativePath": "images/happy-clown.jpg",
       "AssetKind": "All",
@@ -1139,10 +1156,10 @@
       "OriginalItemSpec": "wwwroot\\images\\happy-clown.jpg"
     },
     {
-      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\images\\irish-nfts-logo.jpg",
+      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\images\\irish-nfts-logo.jpg",
       "SourceId": "IrishNFTs.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\",
       "BasePath": "_content/IrishNFTs.MVC",
       "RelativePath": "images/irish-nfts-logo.jpg",
       "AssetKind": "All",
@@ -1156,10 +1173,10 @@
       "OriginalItemSpec": "wwwroot\\images\\irish-nfts-logo.jpg"
     },
     {
-      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\images\\lady-in-green-armchair.jpg",
+      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\images\\lady-in-green-armchair.jpg",
       "SourceId": "IrishNFTs.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\",
       "BasePath": "_content/IrishNFTs.MVC",
       "RelativePath": "images/lady-in-green-armchair.jpg",
       "AssetKind": "All",
@@ -1173,10 +1190,10 @@
       "OriginalItemSpec": "wwwroot\\images\\lady-in-green-armchair.jpg"
     },
     {
-      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\images\\maiya.jpg",
+      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\images\\maiya.jpg",
       "SourceId": "IrishNFTs.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\",
       "BasePath": "_content/IrishNFTs.MVC",
       "RelativePath": "images/maiya.jpg",
       "AssetKind": "All",
@@ -1190,10 +1207,10 @@
       "OriginalItemSpec": "wwwroot\\images\\maiya.jpg"
     },
     {
-      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\images\\marbles-on-blue-plate.jpg",
+      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\images\\marbles-on-blue-plate.jpg",
       "SourceId": "IrishNFTs.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\",
       "BasePath": "_content/IrishNFTs.MVC",
       "RelativePath": "images/marbles-on-blue-plate.jpg",
       "AssetKind": "All",
@@ -1207,10 +1224,10 @@
       "OriginalItemSpec": "wwwroot\\images\\marbles-on-blue-plate.jpg"
     },
     {
-      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\images\\metal-mask.jpg",
+      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\images\\metal-mask.jpg",
       "SourceId": "IrishNFTs.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\",
       "BasePath": "_content/IrishNFTs.MVC",
       "RelativePath": "images/metal-mask.jpg",
       "AssetKind": "All",
@@ -1224,10 +1241,10 @@
       "OriginalItemSpec": "wwwroot\\images\\metal-mask.jpg"
     },
     {
-      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\images\\mr-darcy.jpg",
+      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\images\\mr-darcy.jpg",
       "SourceId": "IrishNFTs.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\",
       "BasePath": "_content/IrishNFTs.MVC",
       "RelativePath": "images/mr-darcy.jpg",
       "AssetKind": "All",
@@ -1241,10 +1258,10 @@
       "OriginalItemSpec": "wwwroot\\images\\mr-darcy.jpg"
     },
     {
-      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\images\\mystique.jpg",
+      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\images\\mystique.jpg",
       "SourceId": "IrishNFTs.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\",
       "BasePath": "_content/IrishNFTs.MVC",
       "RelativePath": "images/mystique.jpg",
       "AssetKind": "All",
@@ -1258,10 +1275,10 @@
       "OriginalItemSpec": "wwwroot\\images\\mystique.jpg"
     },
     {
-      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\images\\new-york.jpg",
+      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\images\\new-york.jpg",
       "SourceId": "IrishNFTs.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\",
       "BasePath": "_content/IrishNFTs.MVC",
       "RelativePath": "images/new-york.jpg",
       "AssetKind": "All",
@@ -1275,10 +1292,10 @@
       "OriginalItemSpec": "wwwroot\\images\\new-york.jpg"
     },
     {
-      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\images\\orchid.jpg",
+      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\images\\orchid.jpg",
       "SourceId": "IrishNFTs.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\",
       "BasePath": "_content/IrishNFTs.MVC",
       "RelativePath": "images/orchid.jpg",
       "AssetKind": "All",
@@ -1292,10 +1309,10 @@
       "OriginalItemSpec": "wwwroot\\images\\orchid.jpg"
     },
     {
-      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\images\\red-stables-detail-st-annes-park.jpg",
+      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\images\\red-stables-detail-st-annes-park.jpg",
       "SourceId": "IrishNFTs.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\",
       "BasePath": "_content/IrishNFTs.MVC",
       "RelativePath": "images/red-stables-detail-st-annes-park.jpg",
       "AssetKind": "All",
@@ -1309,10 +1326,10 @@
       "OriginalItemSpec": "wwwroot\\images\\red-stables-detail-st-annes-park.jpg"
     },
     {
-      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\images\\resonator-deconstructed.jpg",
+      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\images\\resonator-deconstructed.jpg",
       "SourceId": "IrishNFTs.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\",
       "BasePath": "_content/IrishNFTs.MVC",
       "RelativePath": "images/resonator-deconstructed.jpg",
       "AssetKind": "All",
@@ -1326,10 +1343,10 @@
       "OriginalItemSpec": "wwwroot\\images\\resonator-deconstructed.jpg"
     },
     {
-      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\images\\spanish-doorway.jpg",
+      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\images\\spanish-doorway.jpg",
       "SourceId": "IrishNFTs.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\",
       "BasePath": "_content/IrishNFTs.MVC",
       "RelativePath": "images/spanish-doorway.jpg",
       "AssetKind": "All",
@@ -1343,10 +1360,10 @@
       "OriginalItemSpec": "wwwroot\\images\\spanish-doorway.jpg"
     },
     {
-      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\images\\summer-cocktails.jpg",
+      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\images\\summer-cocktails.jpg",
       "SourceId": "IrishNFTs.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\",
       "BasePath": "_content/IrishNFTs.MVC",
       "RelativePath": "images/summer-cocktails.jpg",
       "AssetKind": "All",
@@ -1360,10 +1377,10 @@
       "OriginalItemSpec": "wwwroot\\images\\summer-cocktails.jpg"
     },
     {
-      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\images\\the-aerialist.jpg",
+      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\images\\the-aerialist.jpg",
       "SourceId": "IrishNFTs.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\",
       "BasePath": "_content/IrishNFTs.MVC",
       "RelativePath": "images/the-aerialist.jpg",
       "AssetKind": "All",
@@ -1377,10 +1394,10 @@
       "OriginalItemSpec": "wwwroot\\images\\the-aerialist.jpg"
     },
     {
-      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\images\\woman-with-a-fan.jpg",
+      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\images\\woman-with-a-fan.jpg",
       "SourceId": "IrishNFTs.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\",
       "BasePath": "_content/IrishNFTs.MVC",
       "RelativePath": "images/woman-with-a-fan.jpg",
       "AssetKind": "All",
@@ -1394,10 +1411,10 @@
       "OriginalItemSpec": "wwwroot\\images\\woman-with-a-fan.jpg"
     },
     {
-      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\images\\yellow-buttons.jpg",
+      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\images\\yellow-buttons.jpg",
       "SourceId": "IrishNFTs.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\",
       "BasePath": "_content/IrishNFTs.MVC",
       "RelativePath": "images/yellow-buttons.jpg",
       "AssetKind": "All",
@@ -1411,10 +1428,10 @@
       "OriginalItemSpec": "wwwroot\\images\\yellow-buttons.jpg"
     },
     {
-      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\js\\site.js",
+      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\js\\site.js",
       "SourceId": "IrishNFTs.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\",
       "BasePath": "_content/IrishNFTs.MVC",
       "RelativePath": "js/site.js",
       "AssetKind": "All",
@@ -1428,10 +1445,10 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
-      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "SourceId": "IrishNFTs.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\",
       "BasePath": "_content/IrishNFTs.MVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css",
       "AssetKind": "All",
@@ -1445,10 +1462,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "SourceId": "IrishNFTs.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\",
       "BasePath": "_content/IrishNFTs.MVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "AssetKind": "All",
@@ -1462,10 +1479,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "SourceId": "IrishNFTs.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\",
       "BasePath": "_content/IrishNFTs.MVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "AssetKind": "All",
@@ -1479,10 +1496,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "SourceId": "IrishNFTs.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\",
       "BasePath": "_content/IrishNFTs.MVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "AssetKind": "All",
@@ -1496,10 +1513,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "SourceId": "IrishNFTs.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\",
       "BasePath": "_content/IrishNFTs.MVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "AssetKind": "All",
@@ -1513,10 +1530,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "SourceId": "IrishNFTs.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\",
       "BasePath": "_content/IrishNFTs.MVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "AssetKind": "All",
@@ -1530,10 +1547,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "SourceId": "IrishNFTs.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\",
       "BasePath": "_content/IrishNFTs.MVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "AssetKind": "All",
@@ -1547,10 +1564,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "SourceId": "IrishNFTs.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\",
       "BasePath": "_content/IrishNFTs.MVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "AssetKind": "All",
@@ -1564,10 +1581,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "SourceId": "IrishNFTs.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\",
       "BasePath": "_content/IrishNFTs.MVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css",
       "AssetKind": "All",
@@ -1581,10 +1598,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "SourceId": "IrishNFTs.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\",
       "BasePath": "_content/IrishNFTs.MVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "AssetKind": "All",
@@ -1598,10 +1615,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "SourceId": "IrishNFTs.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\",
       "BasePath": "_content/IrishNFTs.MVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "AssetKind": "All",
@@ -1615,10 +1632,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "SourceId": "IrishNFTs.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\",
       "BasePath": "_content/IrishNFTs.MVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "AssetKind": "All",
@@ -1632,10 +1649,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "SourceId": "IrishNFTs.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\",
       "BasePath": "_content/IrishNFTs.MVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "AssetKind": "All",
@@ -1649,10 +1666,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "SourceId": "IrishNFTs.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\",
       "BasePath": "_content/IrishNFTs.MVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "AssetKind": "All",
@@ -1666,10 +1683,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "SourceId": "IrishNFTs.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\",
       "BasePath": "_content/IrishNFTs.MVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "AssetKind": "All",
@@ -1683,10 +1700,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "SourceId": "IrishNFTs.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\",
       "BasePath": "_content/IrishNFTs.MVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "AssetKind": "All",
@@ -1700,10 +1717,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "SourceId": "IrishNFTs.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\",
       "BasePath": "_content/IrishNFTs.MVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css",
       "AssetKind": "All",
@@ -1717,10 +1734,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "SourceId": "IrishNFTs.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\",
       "BasePath": "_content/IrishNFTs.MVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "AssetKind": "All",
@@ -1734,10 +1751,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "SourceId": "IrishNFTs.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\",
       "BasePath": "_content/IrishNFTs.MVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "AssetKind": "All",
@@ -1751,10 +1768,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "SourceId": "IrishNFTs.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\",
       "BasePath": "_content/IrishNFTs.MVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "AssetKind": "All",
@@ -1768,10 +1785,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "SourceId": "IrishNFTs.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\",
       "BasePath": "_content/IrishNFTs.MVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "AssetKind": "All",
@@ -1785,10 +1802,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "SourceId": "IrishNFTs.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\",
       "BasePath": "_content/IrishNFTs.MVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "AssetKind": "All",
@@ -1802,10 +1819,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "SourceId": "IrishNFTs.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\",
       "BasePath": "_content/IrishNFTs.MVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "AssetKind": "All",
@@ -1819,10 +1836,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "SourceId": "IrishNFTs.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\",
       "BasePath": "_content/IrishNFTs.MVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "AssetKind": "All",
@@ -1836,10 +1853,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "SourceId": "IrishNFTs.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\",
       "BasePath": "_content/IrishNFTs.MVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css",
       "AssetKind": "All",
@@ -1853,10 +1870,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "SourceId": "IrishNFTs.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\",
       "BasePath": "_content/IrishNFTs.MVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css.map",
       "AssetKind": "All",
@@ -1870,10 +1887,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "SourceId": "IrishNFTs.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\",
       "BasePath": "_content/IrishNFTs.MVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css",
       "AssetKind": "All",
@@ -1887,10 +1904,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "SourceId": "IrishNFTs.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\",
       "BasePath": "_content/IrishNFTs.MVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -1904,10 +1921,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "SourceId": "IrishNFTs.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\",
       "BasePath": "_content/IrishNFTs.MVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css",
       "AssetKind": "All",
@@ -1921,10 +1938,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "SourceId": "IrishNFTs.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\",
       "BasePath": "_content/IrishNFTs.MVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "AssetKind": "All",
@@ -1938,10 +1955,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "SourceId": "IrishNFTs.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\",
       "BasePath": "_content/IrishNFTs.MVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "AssetKind": "All",
@@ -1955,10 +1972,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "SourceId": "IrishNFTs.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\",
       "BasePath": "_content/IrishNFTs.MVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "AssetKind": "All",
@@ -1972,10 +1989,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "SourceId": "IrishNFTs.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\",
       "BasePath": "_content/IrishNFTs.MVC",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js",
       "AssetKind": "All",
@@ -1989,10 +2006,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "SourceId": "IrishNFTs.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\",
       "BasePath": "_content/IrishNFTs.MVC",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "AssetKind": "All",
@@ -2006,10 +2023,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "SourceId": "IrishNFTs.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\",
       "BasePath": "_content/IrishNFTs.MVC",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "AssetKind": "All",
@@ -2023,10 +2040,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "IrishNFTs.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\",
       "BasePath": "_content/IrishNFTs.MVC",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "AssetKind": "All",
@@ -2040,10 +2057,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "SourceId": "IrishNFTs.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\",
       "BasePath": "_content/IrishNFTs.MVC",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js",
       "AssetKind": "All",
@@ -2057,10 +2074,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "SourceId": "IrishNFTs.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\",
       "BasePath": "_content/IrishNFTs.MVC",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "AssetKind": "All",
@@ -2074,10 +2091,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "SourceId": "IrishNFTs.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\",
       "BasePath": "_content/IrishNFTs.MVC",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "AssetKind": "All",
@@ -2091,10 +2108,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "SourceId": "IrishNFTs.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\",
       "BasePath": "_content/IrishNFTs.MVC",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "AssetKind": "All",
@@ -2108,10 +2125,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "SourceId": "IrishNFTs.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\",
       "BasePath": "_content/IrishNFTs.MVC",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js",
       "AssetKind": "All",
@@ -2125,10 +2142,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "SourceId": "IrishNFTs.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\",
       "BasePath": "_content/IrishNFTs.MVC",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js.map",
       "AssetKind": "All",
@@ -2142,10 +2159,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "SourceId": "IrishNFTs.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\",
       "BasePath": "_content/IrishNFTs.MVC",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js",
       "AssetKind": "All",
@@ -2159,10 +2176,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "SourceId": "IrishNFTs.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\",
       "BasePath": "_content/IrishNFTs.MVC",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js.map",
       "AssetKind": "All",
@@ -2176,10 +2193,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\lib\\bootstrap\\LICENSE",
       "SourceId": "IrishNFTs.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\",
       "BasePath": "_content/IrishNFTs.MVC",
       "RelativePath": "lib/bootstrap/LICENSE",
       "AssetKind": "All",
@@ -2193,10 +2210,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
     },
     {
-      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "IrishNFTs.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\",
       "BasePath": "_content/IrishNFTs.MVC",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "AssetKind": "All",
@@ -2210,10 +2227,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "IrishNFTs.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\",
       "BasePath": "_content/IrishNFTs.MVC",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",
@@ -2227,10 +2244,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "IrishNFTs.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\",
       "BasePath": "_content/IrishNFTs.MVC",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
       "AssetKind": "All",
@@ -2244,10 +2261,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "IrishNFTs.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\",
       "BasePath": "_content/IrishNFTs.MVC",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.js",
       "AssetKind": "All",
@@ -2261,10 +2278,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "IrishNFTs.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\",
       "BasePath": "_content/IrishNFTs.MVC",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min.js",
       "AssetKind": "All",
@@ -2278,10 +2295,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "IrishNFTs.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\",
       "BasePath": "_content/IrishNFTs.MVC",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.js",
       "AssetKind": "All",
@@ -2295,10 +2312,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "IrishNFTs.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\",
       "BasePath": "_content/IrishNFTs.MVC",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min.js",
       "AssetKind": "All",
@@ -2312,10 +2329,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "IrishNFTs.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\",
       "BasePath": "_content/IrishNFTs.MVC",
       "RelativePath": "lib/jquery-validation/LICENSE.md",
       "AssetKind": "All",
@@ -2329,10 +2346,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "IrishNFTs.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\",
       "BasePath": "_content/IrishNFTs.MVC",
       "RelativePath": "lib/jquery/dist/jquery.js",
       "AssetKind": "All",
@@ -2346,10 +2363,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "IrishNFTs.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\",
       "BasePath": "_content/IrishNFTs.MVC",
       "RelativePath": "lib/jquery/dist/jquery.min.js",
       "AssetKind": "All",
@@ -2363,10 +2380,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "IrishNFTs.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\",
       "BasePath": "_content/IrishNFTs.MVC",
       "RelativePath": "lib/jquery/dist/jquery.min.map",
       "AssetKind": "All",
@@ -2380,10 +2397,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "IrishNFTs.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\Front-End\\IrishNFTs.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\",
       "BasePath": "_content/IrishNFTs.MVC",
       "RelativePath": "lib/jquery/LICENSE.txt",
       "AssetKind": "All",

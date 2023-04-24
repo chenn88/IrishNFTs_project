@@ -11,6 +11,10 @@ namespace IrishNFTs.MVC.Data
         {
             var userManager = service.GetService<UserManager<IdentityUser>>();
             var roleManager = service.GetService<RoleManager<IdentityRole>>();
+            if (userManager == null || roleManager == null)
+            {
+                throw new Exception("Failed to get user or role manager");
+            }
             await roleManager.CreateAsync(new IdentityRole(Roles.Admin.ToString()));
             await roleManager.CreateAsync(new IdentityRole(Roles.User.ToString()));
 

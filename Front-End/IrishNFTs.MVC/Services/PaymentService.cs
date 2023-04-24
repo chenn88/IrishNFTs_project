@@ -26,7 +26,12 @@ namespace IrishNFTs.MVC.Services
             payment.OrderId = orderId;
             var response = await _httpClient.PostAsJsonAsync($"{OrdersApiUrl}", payment);
             response.EnsureSuccessStatusCode();
-            return await response.Content.ReadFromJsonAsync<PaymentViewModel>();
+            var result = await response.Content.ReadFromJsonAsync<PaymentViewModel>();
+            if (result == null)
+            {
+                throw new Exception("Failed to create payment");
+            }
+            return result;
         }
 
         public async Task<PaymentViewModel> GetPaymentByOrderId(string orderId)
@@ -35,6 +40,12 @@ namespace IrishNFTs.MVC.Services
             response.EnsureSuccessStatusCode();
             var paymentJson = await response.Content.ReadAsStringAsync();
             var payment = JsonConvert.DeserializeObject<PaymentViewModel>(paymentJson);
+            if (payment == null)
+            {
+
+                throw new Exception("Error in retreiving payment details");
+
+            }
             return payment;
         }
 

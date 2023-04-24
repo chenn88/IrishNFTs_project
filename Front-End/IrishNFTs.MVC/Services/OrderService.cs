@@ -26,7 +26,12 @@ namespace IrishNFTs.MVC.Services
             order.UserId = userId;
             var response = await _httpClient.PostAsJsonAsync($"{OrdersApiUrl}", order);
             response.EnsureSuccessStatusCode();
-            return await response.Content.ReadFromJsonAsync<OrderViewModel>();
+            var result = await response.Content.ReadFromJsonAsync<OrderViewModel>();
+            if (result == null)
+            {
+                throw new Exception("An error occured when creating the order");
+            }
+            return result;
         }
 
         public async Task<OrderViewModel> GetOrderById(int id)
@@ -35,6 +40,12 @@ namespace IrishNFTs.MVC.Services
             response.EnsureSuccessStatusCode();
             var orderJson = await response.Content.ReadAsStringAsync();
             var order = JsonConvert.DeserializeObject<OrderViewModel>(orderJson);
+            if (order == null)
+            {
+
+                throw new Exception("An error occured - Order not found");
+
+            }
             return order;
         }
 
@@ -44,6 +55,11 @@ namespace IrishNFTs.MVC.Services
             response.EnsureSuccessStatusCode();
             var ordersJson = await response.Content.ReadAsStringAsync();
             var orders = JsonConvert.DeserializeObject<IEnumerable<OrderViewModel>>(ordersJson);
+            if (orders == null)
+            {
+                throw new Exception("An error has occured - no orders found");
+            }
+
             return orders;
         }
 

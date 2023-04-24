@@ -7,7 +7,7 @@ namespace OrdersAPI.Models
 
         public int OrderId { get; set; }
         public int ProductId { get; set; }
-        public string UserId { get; set; }
+        public string? UserId { get; set; }
         public DateTime OrderDate { get; set; }
         public decimal OrderTotal { get; set; }
         public bool OrderCancellation { get; set; }

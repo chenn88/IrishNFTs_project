@@ -77,7 +77,7 @@ async Task WaitForDatabaseToBeAvailableAsync(ProductDbContext context)
         }
         catch (Exception ex)
         {
-            Console.WriteLine($"Failed to apply migrations. Attempt {i + 1} of {retries}. Retrying in {delayBetweenRetries.TotalSeconds} seconds...");
+            Console.WriteLine($"Failed to apply migrations. Attempt {i + 1} of {retries}. Retrying in {delayBetweenRetries.TotalSeconds} seconds... Error: {ex.Message}");
             if (i == retries - 1)
             {
                 Console.WriteLine($"Failed to apply migrations after {retries} attempts. Aborting...");

@@ -47,7 +47,7 @@ namespace OrdersAPI.Controllers
         [HttpGet("user/{userId}")]
         public async Task<ActionResult<IEnumerable<Order>>> GetOrdersByUserId(string userId)
         {
-            if (_context.Orders == null)
+            if (_context.Orders == null || userId == null)
             {
                 return NotFound();
             }
@@ -62,8 +62,8 @@ namespace OrdersAPI.Controllers
             return orders;
         }
 
-        // PUT: api/Orders/5
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+
+
         [HttpPut("{id}")]
         public async Task<IActionResult> PutOrder(int id, Order order)
         {

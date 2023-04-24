@@ -17,8 +17,20 @@
       "PackagePath": "staticwebassets\\images\\antique-spoons.jpg"
     },
     {
+      "Id": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\images\\art-marbles-in-jar.jpg",
+      "PackagePath": "staticwebassets\\images\\art-marbles-in-jar.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\images\\art-mask.jpg",
+      "PackagePath": "staticwebassets\\images\\art-mask.jpg"
+    },
+    {
       "Id": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\images\\cover-image.jpg",
       "PackagePath": "staticwebassets\\images\\cover-image.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\images\\doggie-daydreaming.jpg",
+      "PackagePath": "staticwebassets\\images\\doggie-daydreaming.jpg"
     },
     {
       "Id": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\images\\happy-clown.jpg",
@@ -29,8 +41,8 @@
       "PackagePath": "staticwebassets\\images\\irish-nfts-logo.jpg"
     },
     {
-      "Id": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\images\\lady-in-green-armchair.jpg",
-      "PackagePath": "staticwebassets\\images\\lady-in-green-armchair.jpg"
+      "Id": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\images\\lockdown-series-2.jpg",
+      "PackagePath": "staticwebassets\\images\\lockdown-series-2.jpg"
     },
     {
       "Id": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\images\\maiya.jpg",

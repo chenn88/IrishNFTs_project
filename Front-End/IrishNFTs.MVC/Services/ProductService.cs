@@ -26,6 +26,10 @@ namespace IrishNFTs.MVC.Services
             response.EnsureSuccessStatusCode();
             var productsJson = await response.Content.ReadAsStringAsync();
             var products = JsonConvert.DeserializeObject<List<ProductViewModel>>(productsJson);
+            if (products == null)
+            {
+                throw new Exception("Unable to deserialize products");
+            }
             return products;
         }
 
@@ -35,6 +39,10 @@ namespace IrishNFTs.MVC.Services
             response.EnsureSuccessStatusCode();
             var productJson = await response.Content.ReadAsStringAsync();
             var product = JsonConvert.DeserializeObject<ProductViewModel>(productJson);
+            if (product == null)
+            {
+                throw new Exception("Unable to deserialize object");
+            }
             return product;
         }
 
@@ -52,6 +60,12 @@ namespace IrishNFTs.MVC.Services
             response.EnsureSuccessStatusCode();
             var createdProductJson = await response.Content.ReadAsStringAsync();
             var createdProduct = JsonConvert.DeserializeObject<ProductViewModel>(createdProductJson);
+            if (createdProduct == null)
+            {
+
+                throw new Exception("An error occured when creating the product");
+
+            }
             return createdProduct;
         }
 

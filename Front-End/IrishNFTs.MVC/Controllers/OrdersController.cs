@@ -37,6 +37,10 @@ namespace IrishNFTs.MVC.Controllers
 
         {
             var userId = User.FindFirstValue(ClaimTypes.NameIdentifier)?.ToString();
+            if (userId == null)
+            {
+                return BadRequest("User ID is null");
+            }
             var orderDate = DateTime.Now;
 
             var newOrder = new OrderViewModel
@@ -125,6 +129,13 @@ namespace IrishNFTs.MVC.Controllers
         public async Task<IActionResult> MyOrders()
         {
             var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+
+            if (userId == null)
+            {
+
+                return BadRequest();
+            }
+
             var orders = await _orderService.GetOrdersByUserId(userId);
 
             var orderProductList = new List<OrderProductViewModel>();

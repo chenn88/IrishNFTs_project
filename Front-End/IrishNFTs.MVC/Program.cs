@@ -33,11 +33,12 @@ using (var scope = app.Services.CreateScope())
 {
     var services = scope.ServiceProvider;
     var context = services.GetRequiredService<UserDbContext>();
+    var userManager = services.GetRequiredService<UserManager<IdentityUser>>();
+    var roleManager = services.GetRequiredService<RoleManager<IdentityRole>>();
 
     // Wait for database to be available and apply pending migrations
     await WaitForDatabaseToBeAvailableAsync(context);
     await DbSeeder.SeedRolesAndAdminAsync(scope.ServiceProvider);
-
 }
 
 // Configure the HTTP request pipeline.

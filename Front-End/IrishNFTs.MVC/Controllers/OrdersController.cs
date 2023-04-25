@@ -139,24 +139,31 @@ namespace IrishNFTs.MVC.Controllers
             var orders = await _orderService.GetOrdersByUserId(userId);
 
             var orderProductList = new List<OrderProductViewModel>();
-
-            foreach (var order in orders)
+            if (orders != null)
             {
-                var product = await _productService.GetProductById(order.ProductId);
-
-                orderProductList.Add(new OrderProductViewModel
+                foreach (var order in orders)
                 {
-                    Order = order,
-                    Product = product
-                });
+                    var product = await _productService.GetProductById(order.ProductId);
+
+                    orderProductList.Add(new OrderProductViewModel
+                    {
+                        Order = order,
+                        Product = product
+                    });
+                }
+
+                var viewModel = new OrderDetailViewModel
+                {
+                    OrderProductList = orderProductList
+                };
+
+                return View(viewModel);
             }
 
-            var viewModel = new OrderDetailViewModel
+            else
             {
-                OrderProductList = orderProductList
-            };
-
-            return View(viewModel);
+                return View();
+            }
         }
 
     }

@@ -41,6 +41,10 @@
       "PackagePath": "staticwebassets\\images\\irish-nfts-logo.jpg"
     },
     {
+      "Id": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\images\\lady-after-picasso.jpg",
+      "PackagePath": "staticwebassets\\images\\lady-after-picasso.jpg"
+    },
+    {
       "Id": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\images\\lockdown-series-2.jpg",
       "PackagePath": "staticwebassets\\images\\lockdown-series-2.jpg"
     },

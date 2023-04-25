@@ -57,7 +57,7 @@ namespace IrishNFTs.MVC.Services
             var orders = JsonConvert.DeserializeObject<IEnumerable<OrderViewModel>>(ordersJson);
             if (orders == null)
             {
-                throw new Exception("An error has occured - no orders found");
+                return Enumerable.Empty<OrderViewModel>();
             }
 
             return orders;

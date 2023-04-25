@@ -2,9 +2,11 @@
     ViewData["Title"] = "Products Admin";
 }
 
-<h1 class="text-center">PRODUCTS ADMIN</h1>
+<h1 class="text-center page-title d-flex justify-content-between px-5"><i
+        class="bi bi-brush-fill"></i>@ViewData["Title"]<i class="bi bi-brush-fill"></i>
+</h1>
 
-<button class="btn-lg btn-primary my-5" data-bs-toggle="modal" data-bs-target="#addProductModal"><i
+<button class="btn-lg btn-success my-5" data-bs-toggle="modal" data-bs-target="#addProductModal"><i
         class="bi bi-plus-circle"></i> Add a product</button>
 
 <div class="modal fade" id="addProductModal" tabindex="-1" aria-labelledby="addProductModal" aria-hidden="true">
@@ -49,8 +51,8 @@
 </div>
 
 
-<div class="table-responsive">
-    <table class="table">
+<div>
+    <table class="w-100 table table-responsive">
 
         <thead>
             <tr>
@@ -64,11 +66,12 @@
 
         </thead>
 
-        @foreach (var product in Model)
-        {
-            var editProduct = $"edit-product-{product.ProductId}";
-            <tbody>
 
+
+        <tbody>
+            @foreach (var product in Model)
+            {
+                var editProduct = $"edit-product-{product.ProductId}";
                 <tr>
                     <td>@product.ProductId</td>
                     <td>@product.Title</td>
@@ -101,107 +104,113 @@
                         </div>
                     </td>
                 </tr>
-            </tbody>
-            <div class="modal fade" id="@editProduct" tabindex="-1" aria-labelledby="@editProduct" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">@editProduct</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            @* FORM TO UPDATE PRODUCT TITLE *@
-                            <form asp-controller="Products" asp-action="UpdateProductTitle" method="post">
-                                <div class="form-group product-read">
-                                    <label for="read-title">Title:</label>
-                                    <input type="text" class="form-control" id="read-title" name="read-title"
-                                        value="@product.Title" required disabled>
-                                </div>
-                                <div class="form-group product-edit">
-                                    <label for="title">Title:</label>
-                                    <input  type="text" class="form-control" id="title" name="title"
-                                        value="@product.Title" required>
 
-                                    <input type="hidden" name="id" value="@product.ProductId">
+                <div class="modal fade" id="@editProduct" tabindex="-1" aria-labelledby="@editProduct" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">@editProduct</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                @* FORM TO UPDATE PRODUCT TITLE *@
+                                <form asp-controller="Products" asp-action="UpdateProductTitle" method="post">
+                                    <div class="form-group product-read">
+                                        <label for="read-title">Title:</label>
+                                        <input type="text" class="form-control" id="read-title" name="read-title"
+                                            value="@product.Title" required disabled>
+                                    </div>
+                                    <div class="form-group product-edit">
+                                        <label for="title">Title:</label>
+                                        <input type="text" class="form-control" id="title" name="title"
+                                            value="@product.Title" required>
 
-                                    <button type="submit" class="save-product-edit-btn btn btn-sm btn-primary mt-3">Save
-                                        Changes</button>
-                                </div>
-                            </form>
-                            @* FORM TO UPDATE PRODUCT PRICE *@
-                            <form asp-controller="Products" asp-action="UpdateProductPrice" method="post">
-                                <div class="form-group product-read my-3">
-                                    <label for="read-price">Price:</label>
-                                    <input type="text" class="form-control" id="read-price" name="read-price" value="€ + @product.Price" required disabled>
-                                </div>
-                                <div class="form-group product-edit my-3">
-                                    <label for="price">Price:</label>
-                                    <input type="text" class="form-control" id="price" name="price" value="@product.Price" required>
+                                        <input type="hidden" name="id" value="@product.ProductId">
 
-                                    <input type="hidden" name="id" value="@product.ProductId">
+                                        <button type="submit" class="save-product-edit-btn btn btn-sm btn-primary mt-3">Save
+                                            Changes</button>
+                                    </div>
+                                </form>
+                                @* FORM TO UPDATE PRODUCT PRICE *@
+                                <form asp-controller="Products" asp-action="UpdateProductPrice" method="post">
+                                    <div class="form-group product-read my-3">
+                                        <label for="read-price">Price:</label>
+                                        <input type="text" class="form-control" id="read-price" name="read-price"
+                                            value="€ + @product.Price" required disabled>
+                                    </div>
+                                    <div class="form-group product-edit my-3">
+                                        <label for="price">Price:</label>
+                                        <input type="text" class="form-control" id="price" name="price"
+                                            value="@product.Price" required>
 
-                                    <button type="submit" class="save-product-edit-btn btn btn-sm btn-primary mt-3">Save
-                                        Changes</button>
-                                </div>
-                            </form>
-                            @* FORM TO UPDATE PRODUCT DESCRIPTION *@
-                            <form asp-controller="Products" asp-action="UpdateProductDescription" method="post">
-                                <div class="form-group product-read my-3">
-                                    <label for="read-description">Description:</label>
-                                    <textarea type="text" class="form-control" id="read-description"name="read-price" value="@product.Description" required disabled></textarea>
-                                </div>
-                                <div class="form-group product-edit my-3">
-                                    <label for="description">Description:</label>
-                                    <textarea type="text" class="form-control" id="description" name="description" value="@product.Description" required></textarea>
-                                    <input type="hidden" name="id" value="@product.ProductId">
-                                    <button type="submit" class="save-product-edit-btn btn btn-sm btn-primary mt-3">Save
-                                        Changes</button>
-                                </div>
-                            </form>
+                                        <input type="hidden" name="id" value="@product.ProductId">
 
-                            @* FORM TO UPDATE PRODUCT CATEGORY *@
-                            <form asp-controller="Products" asp-action="UpdateProductCategory" method="post">
-                                <div class="form-group product-read my-3">
-                                    <label for="read-category">Category:</label>
-                                    <input type="text" class="form-control" id="read-category" name="read-category" value="@product.Category" required disabled>
-                                </div>
-                                <div class="form-group product-edit my-3">
-                                     <label for="category">Category:</label>
-                                    <input type="text" class="form-control" id="category"
-                                        name="category" value="@product.Category" required>
-                                    <input type="hidden" name="id" value="@product.ProductId">
-                                    <button type="submit" class="save-product-edit-btn btn btn-sm btn-primary mt-3">Save
-                                        Changes</button>
-                                </div>
-                            </form>
+                                        <button type="submit" class="save-product-edit-btn btn btn-sm btn-primary mt-3">Save
+                                            Changes</button>
+                                    </div>
+                                </form>
+                                @* FORM TO UPDATE PRODUCT DESCRIPTION *@
+                                <form asp-controller="Products" asp-action="UpdateProductDescription" method="post">
+                                    <div class="form-group product-read my-3">
+                                        <label for="read-description">Description:</label>
+                                        <textarea type="text" class="form-control" id="read-description" name="read-price"
+                                            value="@product.Description" required disabled></textarea>
+                                    </div>
+                                    <div class="form-group product-edit my-3">
+                                        <label for="description">Description:</label>
+                                        <textarea type="text" class="form-control" id="description" name="description"
+                                            value="@product.Description" required></textarea>
+                                        <input type="hidden" name="id" value="@product.ProductId">
+                                        <button type="submit" class="save-product-edit-btn btn btn-sm btn-primary mt-3">Save
+                                            Changes</button>
+                                    </div>
+                                </form>
 
-                            @* FORM TO UPDATE PRODUCT IMAGE *@
-                            <form asp-controller="Products" asp-action="UpdateProductImgUrl" method="post">
-                                <div class="form-group product-read my-3">
-                                    <label for="read-img-url">Image:</label>
-                                    <input type="text" class="form-control" id="read-img-url" name="read-img-url" value="@product.ImgUrl" required disabled>
-                                </div>
-                                <div class="form-group product-edit my-3">
-                                    <label for="img-url">Image:</label>
-                                    <input type="text" class="form-control" id="img-url" name="img-url" value="@product.ImgUrl" required>
-                                    <input type="hidden" name="id" value="@product.ProductId">
-                                    <button type="submit" class="save-product-edit-btn btn btn-sm btn-primary mt-3">Save
-                                        Changes</button>
-                                </div>
-                            </form>
+                                @* FORM TO UPDATE PRODUCT CATEGORY *@
+                                <form asp-controller="Products" asp-action="UpdateProductCategory" method="post">
+                                    <div class="form-group product-read my-3">
+                                        <label for="read-category">Category:</label>
+                                        <input type="text" class="form-control" id="read-category" name="read-category"
+                                            value="@product.Category" required disabled>
+                                    </div>
+                                    <div class="form-group product-edit my-3">
+                                        <label for="category">Category:</label>
+                                        <input type="text" class="form-control" id="category" name="category"
+                                            value="@product.Category" required>
+                                        <input type="hidden" name="id" value="@product.ProductId">
+                                        <button type="submit" class="save-product-edit-btn btn btn-sm btn-primary mt-3">Save
+                                            Changes</button>
+                                    </div>
+                                </form>
 
-                            <div class="btn-group mt-1">
-                                <button type="button" class="cancel-edit-btn btn btn-sm btn-danger">Cancel
-                                </button>
-                                <button type="button" class="edit-product-btn btn btn-sm btn-primary">Edit Product
-                                </button>
+                                @* FORM TO UPDATE PRODUCT IMAGE *@
+                                <form asp-controller="Products" asp-action="UpdateProductImgUrl" method="post">
+                                    <div class="form-group product-read my-3">
+                                        <label for="read-img-url">Image:</label>
+                                        <input type="text" class="form-control" id="read-img-url" name="read-img-url"
+                                            value="@product.ImgUrl" required disabled>
+                                    </div>
+                                    <div class="form-group product-edit my-3">
+                                        <label for="img-url">Image:</label>
+                                        <input type="text" class="form-control" id="img-url" name="img-url"
+                                            value="@product.ImgUrl" required>
+                                        <input type="hidden" name="id" value="@product.ProductId">
+                                        <button type="submit" class="save-product-edit-btn btn btn-sm btn-primary mt-3">Save
+                                            Changes</button>
+                                    </div>
+                                </form>
+
+                                <div class="btn-group mt-1">
+                                    <button type="button" class="cancel-edit-btn btn btn-sm btn-danger">Cancel
+                                    </button>
+                                    <button type="button" class="edit-product-btn btn btn-sm btn-primary">Edit Product
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-
-
-        }
+            }
+        </tbody>
     </table>
 </div>

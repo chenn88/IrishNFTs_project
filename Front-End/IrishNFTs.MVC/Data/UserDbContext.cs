@@ -15,6 +15,8 @@ namespace IrishNFTs.MVC.Data
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);
+
         }
+
     }
 }

@@ -47,18 +47,12 @@ namespace OrdersAPI.Controllers
         [HttpGet("user/{userId}")]
         public async Task<ActionResult<IEnumerable<Order>>> GetOrdersByUserId(string userId)
         {
-            if (_context.Orders == null || userId == null)
+            if (userId == null)
             {
-                return NotFound();
+                return BadRequest();
             }
 
             var orders = await _context.Orders.Where(o => o.UserId == userId).ToListAsync();
-
-            if (!orders.Any())
-            {
-                return NotFound();
-            }
-
             return orders;
         }
 

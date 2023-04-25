@@ -13,6 +13,7 @@ using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.WebUtilities;
+using IrishNFTs.MVC.Data;
 
 namespace IrishNFTs.MVC.Areas.Identity.Pages.Account
 {

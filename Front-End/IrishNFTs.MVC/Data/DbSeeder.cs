@@ -20,6 +20,7 @@ namespace IrishNFTs.MVC.Data
 
             var user = new IdentityUser
             {
+
                 UserName = "admin@irishnfts.com",
                 Email = "admin@irishnfts.com",
                 EmailConfirmed = true,

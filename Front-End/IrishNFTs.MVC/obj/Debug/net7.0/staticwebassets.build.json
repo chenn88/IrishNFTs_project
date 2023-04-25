@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "O+9FK6CMekmIVoR/xK0fHRsNlN2oXv2EylJiDctzNE4=",
+  "Hash": "D5zlk/Phs47LjMl3veVWmTrYkJx0r3KbBKA1iJqoUMI=",
   "Source": "IrishNFTs.MVC",
   "BasePath": "_content/IrishNFTs.MVC",
   "Mode": "Default",
@@ -1222,6 +1222,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\irish-nfts-logo.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\images\\lady-after-picasso.jpg",
+      "SourceId": "IrishNFTs.MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\",
+      "BasePath": "_content/IrishNFTs.MVC",
+      "RelativePath": "images/lady-after-picasso.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\lady-after-picasso.jpg"
     },
     {
       "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\images\\lockdown-series-2.jpg",

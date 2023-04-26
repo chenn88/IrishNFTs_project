@@ -8,7 +8,9 @@
         Layout = "/Areas/Identity/Pages/_Layout.cshtml";
     }
 }
-<h1 class="text-center page-title">Manage your account</h1>
+<h1 class="text-center page-title d-flex justify-content-between px-5"><i
+        class="bi bi-brush-fill"></i>@ViewData["Title"]<i class="bi bi-brush-fill"></i>
+</h1>
 <div class="container-fluid shadow vh-100">
 
     <div>
@@ -28,8 +30,8 @@
         </div>
 
     </div>
-    <div class="row my-5">
-        <div class="logo-container my-5 w-50 mx-auto">
+    <div class="row my-5 my-5">
+        <div class="logo-container col-6 my-5">
             <img class="body-logo" src="/images/irish-nfts-logo.jpg" alt="Irish NFTs logo">
         </div>
     </div>

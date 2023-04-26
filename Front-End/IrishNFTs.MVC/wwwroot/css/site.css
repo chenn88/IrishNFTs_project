@@ -111,13 +111,16 @@ body {
 .product-detail-price {
   display: inline-block;
   color: #f44336;
-  border: solid 1px #f44336;
-  background-color: #ffffff;
-  border-radius: 8px;
-  font-size: 24px;
-  font-weight: 600;
-  padding: 12px 16px;
-  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.product-detail-heading {
+
+  font-size: 18px;
+  color: #096A2E;
+  font-weight: 700;
+
 }
 
 .product-order-price {
@@ -129,28 +132,12 @@ body {
   text-align: center;
 }
 
-.product-details-order-btn {
-  display: inline-block;
-  color: #fff;
-  background-color: #4CAF50;
-  border-radius: 8px;
-  font-size: 20px;
-  font-weight: 600;
-  padding: 12px 24px;
-  text-align: center;
-  transition: background-color 0.3s ease;
-}
 
-.product-details-order-btn {
-  background-color: #388E3C;
-}
-
-.order-page-img {
-
+/* .order-page-img {
   width: 300px;
   height: 300px;
 
-}
+} */
 
 #nav-logo {
   margin-left: 50px;
@@ -263,4 +250,12 @@ body {
   margin-top: 50px;
   margin-bottom: 50px;
   font-size: 32px;
+}
+
+.order-complete-text {
+
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 20px;
+
 }

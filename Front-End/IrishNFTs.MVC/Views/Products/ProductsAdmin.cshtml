@@ -51,8 +51,8 @@
 </div>
 
 
-<div>
-    <table class="w-100 table table-responsive">
+
+    <table class="w-100 table table-responsive ">
 
         <thead>
             <tr>
@@ -72,10 +72,12 @@
             @foreach (var product in Model)
             {
                 var editProduct = $"edit-product-{product.ProductId}";
+                var deleteProduct = $"delete-product-{product.ProductId}";
                 <tr>
+
                     <td>@product.ProductId</td>
                     <td>@product.Title</td>
-                    <td><img class="img-thumbnail" src="@product.ImgUrl"></img></td>
+                    <td><img class="img-thumbnail rounded-3" src="@product.ImgUrl"></img></td>
                     <td>@product.Price</td>
 
                     @if (product.InStock)
@@ -91,18 +93,49 @@
                             Sold
                         </td>
                     }
+
                     <td>
                         <div class="btn-group" role="group">
                             <button type="submit" class="btn btn-outline-success mx-1" data-bs-toggle="modal"
-                                data-bs-target="#@editProduct"><i class="bi bi-pencil-fill"></i>
+                                data-bs-target="#@editProduct"style="font-size: 12px;"><i class="bi bi-pencil-fill"></i>
                                 Edit</button>
                             <form method="post" action="/Products/DeleteProduct">
                                 <input type="hidden" name="id" value="@product.ProductId" />
-                                <button type="submit" class="btn btn-outline-danger"><i class="bi bi-trash3-fill"></i>
+                                <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#@deleteProduct" style="font-size: 12px"><i class="bi bi-trash3-fill"></i>
                                     Delete</button>
+                                @* MODAL TO DELETE PRODUCT *@
+                               
+                                <div class="modal fade" id="@deleteProduct" tabindex="-1" aria-labelledby="deleteProductModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="deleteProductModalLabel">Confirm deletion of: @product.Title</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img class="img-thumbnail" src="@product.ImgUrl">
+                                            @if (product.InStock)
+                                                {
+                                                    <p>Are you sure you want to delete @product.Title?</p> 
+                                                }
+                                            else
+                                                {
+                                                    <p>@product.Title is sold and cannot be deleted.</p> 
+                                                }
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                            @if (product.InStock)
+                                            {
+                                            <button type="submit" class="btn btn-danger"><i class="bi bi-trash3-fill"></i> Delete Product</button>
+                                            }
+                                        </div>
+                                    </div>
+                                </div>
                             </form>
                         </div>
                     </td>
+
                 </tr>
 
                 <div class="modal fade" id="@editProduct" tabindex="-1" aria-labelledby="@editProduct" aria-hidden="true">
@@ -112,6 +145,10 @@
                                 <h5 class="modal-title" id="exampleModalLabel">@editProduct</h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
+
+                            
+
+
                             <div class="modal-body">
                                 @* FORM TO UPDATE PRODUCT TITLE *@
                                 <form asp-controller="Products" asp-action="UpdateProductTitle" method="post">
@@ -192,7 +229,7 @@
                                     </div>
                                     <div class="form-group product-edit my-3">
                                         <label for="img-url">Image:</label>
-                                        <input type="text" class="form-control" id="img-url" name="img-url"
+                                        <input type="text" class="form-control" id="imgUrl" name="imgUrl"
                                             value="@product.ImgUrl" required>
                                         <input type="hidden" name="id" value="@product.ProductId">
                                         <button type="submit" class="save-product-edit-btn btn btn-sm btn-primary mt-3">Save
@@ -213,4 +250,3 @@
             }
         </tbody>
     </table>
-</div>

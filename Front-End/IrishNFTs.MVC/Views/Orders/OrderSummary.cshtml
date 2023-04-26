@@ -12,16 +12,21 @@
         <div id="order-completion-window" class=" mx-auto">
             <div class="card my-5">
                 <div class="card-body">
-                    <h2 class="card-title mb-4">Complete your order for @Model.Title below</h2>
-                    <img class="order-page-img" src=@Model.ImgUrl>
-                    <h3 class="product-order-price card-text mb-4">€@Model.Price</h3>
+                    <h2 class="product-card-title mb-4 text-center">Complete order: "@Model.Title":</h2>
+                    <div class="mx-auto text-center">
+                        <img class="order-page-img img-fluid w-100 mx-auto" src=@Model.ImgUrl>
+                    </div>
+
 
                     <form method="post" action="@Url.Action("CompleteOrder", "Orders")">
                         <input type="hidden" name="ProductId" value="@Model.ProductId" />
                         <input type="hidden" name="OrderTotal" value="@Model.Price" />
 
                         <div class="row">
-                            <h2 class="text-center my-5">Payment</h2>
+                            <h2 class="product-card-title text-center my-5">Payment</h2>
+                            <p style="font-size: 20px">Complete payment of <span
+                                    class="product-order-price card-text">€@Model.Price</span>below:
+                            </p>
                             <div id="payment-info" class="card">
                                 <div class="card-info card-body">
                                     <div class="row mb-3">

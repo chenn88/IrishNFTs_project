@@ -16,10 +16,11 @@
                 var modalId = $"product-details-{product.ProductId}";
 
                 <div class="col">
-                    <div class="card shadow-sm product-card mb-5">
+                    <div class="card shadow-sm product-card mb-5 mx-auto">
                         <img class="img-fluid" src="@product.ImgUrl" alt="@product.Title" max-width="300" max-height="300">
                         <div class="card-body">
                             <h5 class="product-card-title">@product.Title</h5>
+                            <span style="color:red">€@product.Price</span>
                             <div class="card-buttons mx-auto text-center">
                                 <button type="button" class="btn product-card-btn" data-bs-toggle="modal"
                                     data-bs-target="#@modalId">
@@ -37,7 +38,7 @@
                     <div class="modal-dialog modal-lg">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title text-center" id="exampleModalLabel">@product.Title</h5>
+                                <h2 class="modal-title text-center" id="exampleModalLabel">@product.Title</h2>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
@@ -47,12 +48,22 @@
                                             <img src="@product.ImgUrl" alt="@product.Title" class="w-100">
                                         </div>
                                         <div class="col-sm-12 col-md-6 d-flex flex-column justify-content-between">
-                                            <h2 class="mb-4">@product.Title</h2>
-                                            <p class="mb-4">@product.Description</p>
+                                            <h2 class="text-center mb-3 product-detail-heading">@product.Title</h2>
+                                            <div>
+                                                <h3 class="product-detail-heading">Category:</h3>
+                                                <p class="mb-4">@product.Category</p>
+                                            </div>
+                                            <div>
+                                                <h3 class="product-detail-heading">Description:</h3>
+                                                <p class="mb-4">@product.Description</p>
+                                            </div>
+                                            <div>
+                                                <h3 class="product-detail-heading">Price:</h3>
+                                                <p class="product-detail-price">€@product.Price</p>
+                                            </div>
                                             <div class="d-flex flex-column justify-content-center mb-4">
-                                                <h3 class="product-detail-price w-50 mx-auto">€@product.Price</h3>
                                                 <a href="@Url.Action("OrderSummary", "Orders", new { id = product.ProductId })"
-                                                    class="btn product-details-order-btn">Order Product</a>
+                                                    class="btn btn-success">Order Now</a>
                                             </div>
 
                                         </div>

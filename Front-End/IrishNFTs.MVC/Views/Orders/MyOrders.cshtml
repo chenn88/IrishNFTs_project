@@ -20,9 +20,9 @@
                         <th>Order ID</th>
                         <th>Order Date</th>
                         <th>Product</th>
-                        <th>Order Date</th>
                         <th>Amount</th>
                         <th>Status</th>
+                        <th>Actions</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -31,7 +31,7 @@
                         @foreach (var item in Model.OrderProductList)
                             if (item != null && item.Order != null && item.Product != null)
                             {
-
+                                var modalId = $"order-{item.Order.OrderId}";
                                 <tr>
                                     <td>@item.Order.OrderId</td>
                                     <td>@item.Order.OrderDate.ToString("dd-MM-yyyy")</td>
@@ -42,24 +42,56 @@
                                     <td>€@item.Order.OrderTotal.ToString("N2")</td>
                                     @if (@item.Order.OrderCancellation)
                                     {
-                                        <td>Cancelled</td>
+                                        <td style="color: red">Cancelled</td>
                                     }
                                     else
                                     {
 
-                                        <td>Complete</td>
+                                        <td style="color: green">Complete</td>
 
                                     }
+
                                     <td>
                                         @if (item.Order.OrderCancellation)
                                         {
                                             <a class="btn btn-danger" asp-action="CancelOrder"
                                                 asp-route-id="@item.Order.OrderId">Cancelled</a>
+                                            <p style="font-size: 10px">Please check your email for confirmation</p>
                                         }
                                         else
                                         {
-                                            <a class="btn btn-success" asp-action="CancelOrder" asp-route-id="@item.Order.OrderId">Cancel
-                                                Order</a>
+
+                                            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#@modalId">
+                                                Cancel Order
+                                            </button>
+
+                                            <!-- Modal -->
+                                            <div class="modal fade" id="@modalId" tabindex="-1" aria-labelledby="cancelModalLabel"
+                                                aria-hidden="true">
+                                                <div class="modal-dialog">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h5 class="modal-title text-center" id="cancelModalLabel">Order Cancellation
+                                                            </h5>
+                                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                                aria-label="Close"></button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <p style="font-size: 12px; font-weight:700; color: red">Once you click "Yes,
+                                                                please cancel, the order will show as cancelled on your
+                                                                account. An email will be sent separately to confirm</p>
+                                                            <p>@item.Order.OrderId</p>
+                                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No, I've
+                                                                changed my mind</button>
+                                                            <a type="button" class="btn btn-success" asp-action="CancelOrder"
+                                                                asp-route-id="@item.Order.OrderId">Yes, please cancel</a>
+                                                        </div>
+                                                        <div class="modal-footer">
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         }
                                     </td>
                                 </tr>

@@ -109,33 +109,11 @@ namespace IrishNFTs.MVC.Controllers
         [Authorize(Roles = "Admin")]
         public async Task<IActionResult> UpdateProductImgUrl(int id, string imgUrl)
         {
-
+            Console.WriteLine($"imgUrl: {imgUrl}");
             var content = new StringContent(JsonConvert.SerializeObject(imgUrl), Encoding.UTF8, "application/json");
             await _productService.UpdateProductImgUrl(id.ToString(), content);
             return RedirectToAction("ProductsAdmin");
+            Console.WriteLine($"imgUrl: {imgUrl}");
         }
-
-
-
-        // [Authorize(Roles = "Administrator")]
-        // public async Task<IActionResult> UpdateProductDescription(int id, string description)
-        // {
-
-        //     var content = new StringContent(JsonConvert.SerializeObject(description), Encoding.UTF8, "application/json");
-        //     await _productService.UpdateProductDescription(id.ToString(), content);
-        //     return RedirectToAction("ProductsAdmin");
-        // }
-
-        // [HttpPost]
-        // public async Task<ActionResult> EditProduct(ProductViewModel product)
-        // {
-        //     if (!ModelState.IsValid)
-        //     {
-        //         return View(product);
-        //     }
-
-        //     await _productService.UpdateProduct(product);
-        //     return RedirectToAction("Products");
-        // }
     }
 }

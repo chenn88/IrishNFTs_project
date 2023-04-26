@@ -1,15 +1,23 @@
 @model IrishNFTs.MVC.Models.OrderViewModel
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
 
 @{
     ViewData["Title"] = "Order confirmation";
 }
 
-<h1 class="text-center page-title">You have completed your order</h1>
-<div>
-    <p>Your order id is @Model.OrderId</p>
-    <p>Your order total is @Model.OrderTotal</p>
-    <p></p>
-    <p></p>
-
-
+<h1 class="text-center page-title d-flex justify-content-between px-5"><i
+        class="bi bi-brush-fill"></i>@ViewData["Title"]<i class="bi bi-brush-fill"></i>
+</h1>
+<div class="col-lg-6 col-md-12 col-sm-12 mx-auto my-5 text-center">
+    <div class="logo-container my-3 mx-auto my-5">
+        <img class="body-logo img-fluid" src="/images/irish-nfts-logo.jpg" alt="Irish NFTs logo">
+    </div>
+    <i class="bi bi-check-circle fa-5x" style="color: green"></i>
+    <p class="order-complete-text">Thanks! Your order is now complete.</p>
+    <p class="order-complete-text">Details to access your NFT will be emailed to
+        @UserManager.GetUserName(User)!</p>
+    <p class="order-complete-text">Your order number is: <span style="color: red">@Model.OrderId</span></p>
+    <p class="order-complete-text">Your order total is: <span style="color: red">€@Model.OrderTotal</span></p>
 </div>

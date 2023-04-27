@@ -16,15 +16,25 @@ namespace IrishNFTs.MVC.Controllers
             _productService = productService;
         }
 
-        public async Task<ActionResult> Index()
+        public async Task<ActionResult> Index(int? page)
         {
-            var products = await _productService.GetAllProducts();
+            int pageNum = (page ?? 1);
+            int pageSize = 12;
+            var products = await _productService.GetAllProducts(pageNum, pageSize);
+            int totalItemCount = await _productService.GetProductsCount();
+            ViewBag.TotalItemCount = totalItemCount;
+            ViewBag.PageNumber = pageNum;
             return View(products);
         }
 
-        public async Task<ActionResult> ProductsAdmin()
+        public async Task<ActionResult> ProductsAdmin(int? page)
         {
-            var products = await _productService.GetAllProducts();
+            int pageNum = (page ?? 1);
+            int pageSize = 12;
+            var products = await _productService.GetAllProducts(pageNum, pageSize);
+            int totalItemCount = await _productService.GetProductsCount();
+            ViewBag.TotalItemCount = totalItemCount;
+            ViewBag.PageNumber = pageNum;
             return View(products);
 
         }

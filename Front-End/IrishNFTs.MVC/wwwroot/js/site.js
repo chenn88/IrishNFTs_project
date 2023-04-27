@@ -1,8 +1,12 @@
-﻿// Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-// for details on configuring this project to bundle and minify static web assets.
+﻿
 
-// Write your JavaScript code.
+
+
 $(document).ready(function () {
+
+
+    //LOGIC FOR EDITING PRODUCT ON PRODUCTS ADMIN PAGE
+
     // Hide the edit form and save button initially
     $('.product-edit').hide();
     $('.cancel-edit').hide();
@@ -38,9 +42,9 @@ $(document).ready(function () {
         $('.save-product-edit-btn').hide();
     });
 
+    //END OF LOGIC FOR EDITING PRODUCT ON PRODUCTS ADMIN PAGE
 
-
-    // Array of image sources
+    // ANIMATION FOR IMAGE TILES ON LANDING PAGE 
     var imageSources = [
         "/images/antique-spoons.jpg",
         "/images/art-mask.jpg",
@@ -112,6 +116,74 @@ $(document).ready(function () {
     $('.landing-page-tile').each(function () {
         randomImageChange(this);
     });
+
+    // END OF ANIMATION FOR IMAGE TILES ON LANDING PAGE 
+
+    // CARD FORM VALIDATION FOR PAYMENT
+
+    $("#submit-order").click(function (event) {
+        event.preventDefault();
+
+        // Get input values
+        var cardNumberInput = $("#CardNum");
+        var cardNumber = $("#CardNum").val();
+        var cardholderName = $("#PaymentCardName").val();
+        var expirationDate = $("#CardExp").val();
+        var cvcCode = $("#CardCvv").val();
+
+        cardNumberInput.keyup(function () {
+            var val = this.value.replace(/\s/g, '');
+            var newVal = '';
+            for (var i = 0; i < val.length; i++) {
+                if (i % 4 == 0 && i > 0) newVal = newVal.concat(' ');
+                newVal = newVal.concat(val[i]);
+            }
+            this.value = newVal;
+        });
+
+        // Regular expressions for validation
+        var cardNumberPattern = /^[\d ]{19}$/;
+        var cardholderNamePattern = /^[a-zA-Z\s]+$/;
+        var expirationDatePattern = /^(0[1-9]|1[0-2])\/([0-9]{2})$/;
+        var cvcCodePattern = /^[0-9]{3}$/;
+
+        // Validate input values against patterns
+        var isValid = true;
+        if (!cardNumberPattern.test(cardNumber)) {
+            $("#CardNum").addClass("is-invalid");
+            isValid = false;
+        } else {
+            $("#CardNum").removeClass("is-invalid");
+        }
+        if (!cardholderNamePattern.test(cardholderName)) {
+            $("#PaymentCardName").addClass("is-invalid");
+            isValid = false;
+        } else {
+            $("#PaymentCardName").removeClass("is-invalid");
+        }
+        if (!expirationDatePattern.test(expirationDate)) {
+            $("#CardExp").addClass("is-invalid");
+            isValid = false;
+        } else {
+            $("#CardExp").removeClass("is-invalid");
+        }
+        if (!cvcCodePattern.test(cvcCode)) {
+            $("#CardCvv").addClass("is-invalid");
+            isValid = false;
+        } else {
+            $("#CardCvv").removeClass("is-invalid");
+        }
+
+        if (!isValid) {
+            // If validation fails, stop form submission and show an error message
+            return false;
+        }
+
+        // If all validations pass, submit the form or process the payment
+        $("form").submit();
+    });
+
+    //END OF FORM VALIDATION FOR PAYMENT
 
 });
 

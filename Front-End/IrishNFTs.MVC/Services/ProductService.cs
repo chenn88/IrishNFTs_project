@@ -20,9 +20,9 @@ namespace IrishNFTs.MVC.Services
             _httpClient = httpClient;
         }
 
-        public async Task<List<ProductViewModel>> GetAllProducts()
+        public async Task<List<ProductViewModel>> GetAllProducts(int pageNum = 1, int pageSize = 12)
         {
-            var response = await _httpClient.GetAsync(ProductsApiUrl);
+            var response = await _httpClient.GetAsync($"{ProductsApiUrl}?pageNum={pageNum}&pageSize={pageSize}");
             response.EnsureSuccessStatusCode();
             var productsJson = await response.Content.ReadAsStringAsync();
             var products = JsonConvert.DeserializeObject<List<ProductViewModel>>(productsJson);
@@ -31,6 +31,17 @@ namespace IrishNFTs.MVC.Services
                 throw new Exception("Unable to deserialize products");
             }
             return products;
+
+
+        }
+
+        public async Task<int> GetProductsCount()
+        {
+            var response = await _httpClient.GetAsync($"{ProductsApiUrl}/count");
+            response.EnsureSuccessStatusCode();
+            var countJson = await response.Content.ReadAsStringAsync();
+            int count = JsonConvert.DeserializeObject<int>(countJson);
+            return count;
         }
 
         public async Task<ProductViewModel> GetProductById(int id)

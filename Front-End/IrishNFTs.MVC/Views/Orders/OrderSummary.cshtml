@@ -62,12 +62,20 @@
                                                     <span class="input-group-text"><i
                                                             class="bi bi-credit-card"></i></span>
                                                 </div>
+                                                <div class="invalid-feedback">
+                                                    Please enter a valid card number (16 digits)
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="col-md-6 mb-3">
                                             <label for="PaymentCardName">Cardholder Name</label>
-                                            <input type="text" name="PaymentCardName" class="form-control"
-                                                id="PaymentCardName" placeholder="Enter cardholder name">
+                                            <div class="input-group">
+                                                <input type="text" name="PaymentCardName" class="form-control"
+                                                    id="PaymentCardName" placeholder="Enter cardholder name">
+                                                <div class="invalid-feedback">
+                                                    Please enter a valid name
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="row">
@@ -79,20 +87,25 @@
                                                 <div class="input-group-append">
                                                     <span class="input-group-text"><i class="bi bi-calendar"></i></span>
                                                 </div>
+                                                <div class="invalid-feedback">
+                                                    Please enter a valid expiry (MM/YY)
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="col-md-6 mb-3">
                                             <label for="cardCVC">CVC Code</label>
-                                            <input type="text" class="form-control" name="CardCvv" id="CardCvv"
-                                                placeholder="Enter CVC code">
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" name="CardCvv" id="CardCvv"
+                                                    placeholder="Enter CVC code">
+                                                <div class="invalid-feedback">Please enter a valid CVV (3 digits)</div>
+                                            </div>
                                         </div>
                                     </div>
-
                                 </div>
                             </div>
 
                         </div>
-                        <button type="submit" class="btn btn-lg btn-success w-100 mt-3">Complete
+                        <button type="submit" id="submit-order" class="btn btn-lg btn-success w-100 mt-3">Complete
                             Order</button>
                     </form>
                 </div>

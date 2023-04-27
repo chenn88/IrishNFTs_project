@@ -228,7 +228,7 @@ body {
 
   @media(max-width: 767px) {
 
-    max-width: 90%;
+    max-width: 100%;
   }
 }
 
@@ -245,4 +245,23 @@ body {
   height: 100px;
   width: 100px;
 
+}
+
+.pagination-styled .page-link {
+  background-color: #f8f9fa;
+  color: #327A71;
+  border-color: #dee2e6;
+}
+
+.pagination-styled .page-item.active .page-link {
+  background-color: #327A71;
+  border-color: #327A71;
+  color: #ffffff;
+}
+
+.pagination-styled .page-item.disabled .page-link {
+  background-color: #f8f9fa;
+  color: #327A71;
+  border-color: #dee2e6;
+  pointer-events: none;
 }

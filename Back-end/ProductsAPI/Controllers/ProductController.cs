@@ -16,18 +16,33 @@ namespace ProductsAPI.Controllers
             _context = context;
         }
 
-        // GET: api/Product
+        //Get all products
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Product>>> GetProducts()
+        public async Task<ActionResult<IEnumerable<Product>>> GetProducts(int pageNum = 1, int pageSize = 12)
         {
             if (_context.Products == null)
             {
                 return NotFound();
             }
-            return await _context.Products.ToListAsync();
+
+            var products = await _context.Products
+            .OrderBy(p => p.ProductId)
+            .Skip((pageNum - 1) * pageSize)
+            .Take(pageSize)
+            .ToListAsync();
+            return Ok(products);
         }
 
-        // GET: api/Product/5
+        [HttpGet("count")]
+        public async Task<ActionResult<int>> GetProductsCount()
+        {
+            int count = await _context.Products.CountAsync(p => p.InStock == true);
+            return Ok(count);
+        }
+
+
+
+        //Get product by id
         [HttpGet("{id}")]
         public async Task<ActionResult<Product>> GetProduct(int id)
         {
@@ -46,7 +61,6 @@ namespace ProductsAPI.Controllers
         }
 
         // PUT: api/Product/5
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
         public async Task<IActionResult> PutProduct(int id, Product product)
         {

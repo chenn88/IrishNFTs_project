@@ -31,7 +31,21 @@ namespace ProductsAPI.Data
                 new Product { Title = "Yellow Buttons", Price = 2000.00M, Description = "A set of yellow buttons, made of natural materials", Category = "Crafts", ImgUrl = "/images/yellow-buttons.jpg", InStock = true },
                 new Product { Title = "Art Marbles in Jar", Price = 1500.00M, Description = "A painting of marbles arranged in a glass jar, with vibrant colors", Category = "Art", ImgUrl = "/images/art-marbles-in-jar.jpg", InStock = true },
                 new Product { Title = "Doggie Daydreaming", Price = 1200.00M, Description = "A photograph of a dog sleeping, with a dreamy expression", Category = "Photography", ImgUrl = "/images/doggie-daydreaming.jpg", InStock = true },
-                new Product { Title = "Lockdown Series 2", Price = 3000.00M, Description = "A set of 3 paintings depicting life during lockdown, with emotional intensity", Category = "Art", ImgUrl = "/images/lockdown-series-2.jpg", InStock = true }
+                new Product { Title = "Lockdown Series 2", Price = 3000.00M, Description = "A set of 3 paintings depicting life during lockdown, with emotional intensity", Category = "Art", ImgUrl = "/images/lockdown-series-2.jpg", InStock = true },
+                new Product { Title = "Polly", Price = 3000.00M, Description = "Polly", Category = "Animals", ImgUrl = "/images/polly.jpg", InStock = true },
+                new Product { Title = "Charlie", Price = 3000.00M, Description = "Charlie", Category = "Animals", ImgUrl = "/images/charlie.jpg", InStock = true },
+                 new Product { Title = "Woman Reading (after Picasso)", Price = 4000.00M, Description = "Woman Reading", Category = "Abstract", ImgUrl = "/images/woman-reading-after-picasso.jpg", InStock = true },
+                   new Product { Title = "Mr Darcy", Price = 3500.00M, Description = "Mr. Darcy", Category = "Animals", ImgUrl = "/images/mr-darcy.jpg", InStock = true },
+                     new Product { Title = "Woman Reading (after Picasso)", Price = 4000.00M, Description = "Woman Reading", Category = "Abstract", ImgUrl = "/images/woman-reading-after-picasso.jpg", InStock = true },
+                   new Product { Title = "Mr Darcy", Price = 3500.00M, Description = "Mr. Darcy", Category = "Animals", ImgUrl = "/images/mr-darcy.jpg", InStock = true },
+                   new Product { Title = "Woman Reading (after Picasso)", Price = 4000.00M, Description = "Woman Reading", Category = "Abstract", ImgUrl = "/images/woman-reading-after-picasso.jpg", InStock = true },
+                   new Product { Title = "Mr Darcy", Price = 3500.00M, Description = "Mr. Darcy", Category = "Animals", ImgUrl = "/images/mr-darcy.jpg", InStock = true },
+                     new Product { Title = "Woman Reading (after Picasso)", Price = 4000.00M, Description = "Woman Reading", Category = "Abstract", ImgUrl = "/images/woman-reading-after-picasso.jpg", InStock = true },
+                   new Product { Title = "Mr Darcy", Price = 3500.00M, Description = "Mr. Darcy", Category = "Animals", ImgUrl = "/images/mr-darcy.jpg", InStock = true },
+                    new Product { Title = "Woman Reading (after Picasso)", Price = 4000.00M, Description = "Woman Reading", Category = "Abstract", ImgUrl = "/images/woman-reading-after-picasso.jpg", InStock = true },
+                   new Product { Title = "Mr Darcy", Price = 3500.00M, Description = "Mr. Darcy", Category = "Animals", ImgUrl = "/images/mr-darcy.jpg", InStock = true },
+                    new Product { Title = "Woman Reading (after Picasso)", Price = 4000.00M, Description = "Woman Reading", Category = "Abstract", ImgUrl = "/images/woman-reading-after-picasso.jpg", InStock = true },
+                   new Product { Title = "Mr Darcy", Price = 3500.00M, Description = "Mr. Darcy", Category = "Animals", ImgUrl = "/images/mr-darcy.jpg", InStock = true }
 
             };
 

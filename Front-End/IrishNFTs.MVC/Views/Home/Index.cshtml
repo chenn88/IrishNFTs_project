@@ -1,5 +1,85 @@
-﻿@{
+﻿@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+
+@{
     ViewData["Title"] = "Home Page";
 }
+
+<div class="row">
+    <h1 id="landing-page-header" class="display-1 text-center my-3">Welcome to Irish NFT's</h1>
+    <p class="landing-page-text text-center mb-5">Own a digital NFT of original art</p>
+
+</div>
+
+<div class="row my-5">
+
+    <div class="col-lg-6 col-md-12 d-flex mb-5 flex-column justify-content-center align-items-middle text-center">
+        @if (!SignInManager.IsSignedIn(User))
+        {
+            <h2 class="landing-page-text mb-5">Register or sign in to start shopping</h2>
+
+
+            <div class=" btn-group align-center">
+                <a asp-area="Identity" asp-page="/Account/Register" type="button"
+                    class="landing-page-btn btn w-50 me-2">Register</a>
+                <a asp-controller="Products" asp-action="Index" type="button" class="landing-page-btn btn w-50">Browse
+                    Gallery</a>
+            </div>
+
+        }
+        else
+        {
+
+            <h2 class="landing-page-text mb-5">Welcome @UserManager.GetUserName(User)!</h2>
+            <p>Click below to go to the gallery</p>
+
+            <div class=" btn-group align-center">
+                @* <a asp-area="Identity" asp-page="/Account/Register" type="button"
+            class="landing-page-btn btn w-50 me-2">Register</a> *@
+                <a asp-controller="Products" asp-action="Index" type="button" class="landing-page-btn btn w-50">Browse
+                    Gallery</a>
+            </div>
+
+
+        }
+    </div>
+    <div class="col-lg-6 col-md-12">
+        <div class="row mb-3 d-flex justify-content-center mb-3">
+
+            <img class="landing-page-tile img-fluid" src="/images/new-york.jpg">
+            <img class="landing-page-tile img-fluid mt-3" src="/images/yellow-buttons.jpg">
+            <img class="landing-page-tile img-fluid" src="/images/art-mask.jpg">
+
+        </div>
+        <div class="row mb-3 d-flex justify-content-between mb-3">
+
+            <img class="landing-page-tile img-fluid mt-3" src="/images/face-of-climate-change.jpg">
+            <img class="landing-page-tile img-fluid mb-3" src="/images/white-rose.jpg">
+            <img class="landing-page-tile img-fluid mt-3 mb-3" src="/images/maiya.jpg">
+            <img class="landing-page-tile img-fluid" src="/images/charlie.jpg">
+            <img class="landing-page-tile img-fluid mt-3" src="/images/polly.jpg">
+
+        </div>
+        <div class="row d-flex justify-content-around mb-3">
+
+            <img class="landing-page-tile img-fluid mt-3" src="/images/mystique.jpg">
+            <img class="landing-page-tile img-fluid" src="/images/holiday-cocktails.jpg">
+            <img class="landing-page-tile img-fluid mt-3" src="/images/lady-after-picasso.jpg">
+            <img class="landing-page-tile img-fluid" src="/images/masquerade.jpg">
+
+        </div>
+        <div class="row d-flex justify-content-center">
+            <img class="landing-page-tile img-fluid mt-3" src=" /images/art-marbles-in-jar.jpg">
+            <img class="landing-page-tile img-fluid " src="/images/orchid.jpg">
+            <img class="landing-page-tile img-fluid mt-3" src="/images/rose.jpg">
+
+        </div>
+
+    </div>
+
+</div>
+
+
 
 

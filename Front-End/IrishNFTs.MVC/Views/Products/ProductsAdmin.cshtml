@@ -13,7 +13,7 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <h5 class="modal-title" id="addProductModalLabel">Modal title</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
@@ -27,8 +27,17 @@
                         <textarea class="form-control" id="description" name="Description" required></textarea>
                     </div>
                     <div class="form-group">
-                        <label for="category">Category:</label>
-                        <input type="text" class="form-control" id="category" name="Category" required>
+                         <label for="category">Category:</label>
+                        <select class="form-select" id="category" name="Category" required>
+                            <option value="" disabled selected>Select a category</option>
+                            <option value="Abstract">Abstract</option>
+                            <option value="Animals">Animals</option>
+                            <option value="Animals">Cityscape</option>
+                            <option value="Animals">Landscape</option>
+                            <option value="Music">Music</option>
+                            <option value="Portrait">Portrait</option>
+                            <option value="Still Life">Still Life</option>
+                        </select>
                     </div>
                     <div class="form-group">
                         <label for="price">Price:</label>
@@ -50,8 +59,6 @@
     </div>
 </div>
 
-
-
     <table class="w-100 table table-responsive ">
 
         <thead>
@@ -65,8 +72,6 @@
             </tr>
 
         </thead>
-
-
 
         <tbody>
             @foreach (var product in Model)
@@ -88,12 +93,10 @@
                     }
                     else
                     {
-
                         <td style="color: red">
                             Sold
                         </td>
                     }
-
                     <td>
                         <div class="btn-group" role="group">
                             <button type="submit" class="btn btn-outline-success mx-1" data-bs-toggle="modal"
@@ -135,19 +138,14 @@
                             </form>
                         </div>
                     </td>
-
                 </tr>
-
                 <div class="modal fade" id="@editProduct" tabindex="-1" aria-labelledby="@editProduct" aria-hidden="true">
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">@editProduct</h5>
+                                <h5 class="modal-title" id="editModalLabel">@editProduct</h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
-
-                            
-
 
                             <div class="modal-body">
                                 @* FORM TO UPDATE PRODUCT TITLE *@
@@ -168,6 +166,7 @@
                                             Changes</button>
                                     </div>
                                 </form>
+
                                 @* FORM TO UPDATE PRODUCT PRICE *@
                                 <form asp-controller="Products" asp-action="UpdateProductPrice" method="post">
                                     <div class="form-group product-read my-3">
@@ -186,6 +185,7 @@
                                             Changes</button>
                                     </div>
                                 </form>
+
                                 @* FORM TO UPDATE PRODUCT DESCRIPTION *@
                                 <form asp-controller="Products" asp-action="UpdateProductDescription" method="post">
                                     <div class="form-group product-read my-3">
@@ -236,7 +236,7 @@
                                             Changes</button>
                                     </div>
                                 </form>
-
+                                
                                 <div class="btn-group mt-1">
                                     <button type="button" class="cancel-edit-btn btn btn-sm btn-danger">Cancel
                                     </button>

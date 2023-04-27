@@ -29,12 +29,6 @@ namespace IrishNFTs.MVC.Controllers
 
         }
 
-        public async Task<ActionResult> ProductDetails(int id)
-        {
-            var product = await _productService.GetProductById(id);
-            return View("ProductDetails", product);
-        }
-
         [HttpPost]
         [Authorize(Roles = "Admin")]
         public async Task<ActionResult> DeleteProduct(int id)

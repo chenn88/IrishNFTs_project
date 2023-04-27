@@ -26,57 +26,38 @@ body {
 }
 
 
+#landing-page-header {
 
-/* CUSTOMIZE THE CAROUSEL
--------------------------------------------------- */
+  color: #327A71;
 
-/* Carousel base class */
-.carousel {
-  margin-bottom: 20px;
 }
 
-/* Since positioning the image, we need to help out the caption */
-.carousel-caption {
-  bottom: 10px;
-  z-index: 10;
+.landing-page-text {
+
+  color: #7A323B;
+  font-size: 32px;
+  font-weight: 300;
+
 }
 
-/* Declare heights because of positioning of img element */
-.carousel-item {
-  height: 500px;
+.landing-page-btn {
+
+  color: #327A71;
+  font-size: 22px;
+  border: solid 1px #327A71;
+  border-radius: 12px;
+
+}
+
+.landing-page-btn:hover {
+
+  color: #ffffff;
+  background-color: #327A71;
+  border: solid 1px #327A71;
+
 }
 
 
-/* Featurettes
-------------------------- */
-
-.featurette-divider {
-  margin: 50px 0;
-}
-
-
-/* RESPONSIVE CSS
--------------------------------------------------- */
-
-@media (min-width: 40em) {
-
-  /* Bump up size of carousel content */
-  .carousel-caption p {
-    margin-bottom: 1.25rem;
-    font-size: 1.25rem;
-    line-height: 1.4;
-  }
-
-  .featurette-heading {
-    font-size: 50px;
-  }
-}
-
-@media (min-width: 62em) {
-  .featurette-heading {
-    margin-top: 70px;
-  }
-}
 
 .navbar-nav .nav-link {
   color: #327A71 !important;
@@ -84,7 +65,7 @@ body {
   border: solid 1px #fff;
   border-radius: 5px;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .navbar-nav .nav-link:hover {
@@ -133,16 +114,10 @@ body {
 }
 
 
-/* .order-page-img {
-  width: 300px;
-  height: 300px;
-
-} */
-
 #nav-logo {
   margin-left: 50px;
   width: 100px;
-  height: 50px;
+  height: 60px;
 
 }
 
@@ -223,7 +198,7 @@ body {
 .body-logo {
   margin: 0 auto;
   max-width: 200px;
-  max-height: 100px;
+  max-height: 200px;
 
 }
 
@@ -250,6 +225,11 @@ body {
   margin-top: 50px;
   margin-bottom: 50px;
   font-size: 32px;
+
+  @media(max-width: 767px) {
+
+    max-width: 90%;
+  }
 }
 
 .order-complete-text {
@@ -257,5 +237,12 @@ body {
   font-size: 22px;
   font-weight: 500;
   margin-bottom: 20px;
+
+}
+
+.landing-page-tile {
+
+  height: 100px;
+  width: 100px;
 
 }

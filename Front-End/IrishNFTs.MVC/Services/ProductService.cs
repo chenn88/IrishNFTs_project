@@ -69,15 +69,6 @@ namespace IrishNFTs.MVC.Services
             return createdProduct;
         }
 
-        // public async Task UpdateProduct(ProductViewModel product)
-        // {
-
-        //     var productContent = new StringContent(JsonConvert.SerializeObject(product), Encoding.UTF8, "application/json");
-        //     var productResponse = await _httpClient.PutAsync($"{ProductsApiUrl}/{product.ProductId}", productContent);
-        //     productResponse.EnsureSuccessStatusCode();
-
-        // }
-
         public async Task UpdateProductStock(string productId, StringContent content)
         {
             var inStockResponse = await _httpClient.PatchAsync($"{ProductsApiUrl}/{productId}/InStock", content);

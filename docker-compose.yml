@@ -18,7 +18,7 @@ services:
       - irish-nfts
 
   irishnfts:
-    build: ./front-end/IrishNFTs.MVC
+    build: ./Front-end/IrishNFTs.MVC
     image: irishnfts:mvc
     container_name: irishnfts_mvc
     ports:
@@ -32,7 +32,7 @@ services:
       - irish-nfts
 
   productsapi:
-    build: ./back-end/ProductsAPI
+    build: ./Back-end/ProductsAPI
     image: irishnfts:productsapi
     container_name: irishnfts_productsapi
     ports:
@@ -43,7 +43,7 @@ services:
       - irish-nfts
 
   ordersapi:
-    build: ./back-end/OrdersAPI
+    build: ./Back-end/OrdersAPI
     image: irishnfts:ordersapi
     container_name: irishnfts_ordersapi
     ports:

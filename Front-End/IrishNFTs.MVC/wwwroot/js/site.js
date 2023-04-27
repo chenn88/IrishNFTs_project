@@ -120,26 +120,40 @@ $(document).ready(function () {
     // END OF ANIMATION FOR IMAGE TILES ON LANDING PAGE 
 
     // CARD FORM VALIDATION FOR PAYMENT
+    var cardNumberInput = $("#CardNum");
+    cardNumberInput.keyup(function () {
+        var val = this.value.replace(/\s/g, '');
+        var newVal = '';
+        for (var i = 0; i < val.length; i++) {
+            if (i % 4 == 0 && i > 0) newVal = newVal.concat(' ');
+            newVal = newVal.concat(val[i]);
+        }
+        this.value = newVal;
+    });
+
+    var expirationDateInput = $("#CardExp");
+
+    expirationDateInput.keyup(function () {
+        var val = this.value.replace(/\//g, '');
+        var newVal = '';
+        for (var i = 0; i < val.length; i++) {
+            if (i == 2) newVal = newVal.concat('/');
+            newVal = newVal.concat(val[i]);
+        }
+        this.value = newVal;
+    });
 
     $("#submit-order").click(function (event) {
         event.preventDefault();
 
         // Get input values
-        var cardNumberInput = $("#CardNum");
+
         var cardNumber = $("#CardNum").val();
         var cardholderName = $("#PaymentCardName").val();
         var expirationDate = $("#CardExp").val();
         var cvcCode = $("#CardCvv").val();
 
-        cardNumberInput.keyup(function () {
-            var val = this.value.replace(/\s/g, '');
-            var newVal = '';
-            for (var i = 0; i < val.length; i++) {
-                if (i % 4 == 0 && i > 0) newVal = newVal.concat(' ');
-                newVal = newVal.concat(val[i]);
-            }
-            this.value = newVal;
-        });
+
 
         // Regular expressions for validation
         var cardNumberPattern = /^[\d ]{19}$/;

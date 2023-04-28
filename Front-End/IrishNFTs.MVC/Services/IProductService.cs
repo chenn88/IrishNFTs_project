@@ -8,8 +8,9 @@ namespace IrishNFTs.MVC.Services
 {
     public interface IProductService
     {
-        Task<List<ProductViewModel>> GetAllProducts(int pageNum, int pagSize);
+        Task<List<ProductViewModel>> GetAllProducts(int pageNum, int pagSize, bool? inStockOnly);
         Task<int> GetProductsCount();
+        Task<int> GetInStockProductsCount();
         Task<ProductViewModel> GetProductById(int id);
         Task<ProductViewModel> CreateProduct(ProductViewModel product);
         Task DeleteProductById(int id);

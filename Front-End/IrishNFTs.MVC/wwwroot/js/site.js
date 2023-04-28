@@ -65,15 +65,23 @@ $(document).ready(function () {
         "/images/art-marbles-in-jar.jpg",
         "/images/doggie-daydreaming.jpg",
         "/images/lockdown-series-2.jpg",
-        "/images/rose.jpg",
-        "/images/woman-reading-after-picasso.jpg",
+        "/images/polly.jpg",
         "/images/charlie.jpg",
-        "/images/face-of-climate-change.jpg",
-        "/images/comedy-tragedy.jpg",
-        "/images/pigeon-house-sunset.jpg",
-        "/images/white-rose.jpg",
+        "/images/woman-reading-after-picasso.jpg",
+        "/images/mr-darcy.jpg",
+        "/images/rose.jpg",
         "/images/masquerade.jpg",
-        "/images/holiday-cocktails.jpg"
+        "/images/white-rose.jpg",
+        "/images/face-of-climate-change.jpg",
+        "/images/pigeon-house-sunset.jpg",
+        "/images/red-stables-detail-st-annes-park.jpg",
+        "/images/clowning-around.jpg",
+        "/images/ciarans-guitar.jpg",
+        "/images/comedy-tragedy.jpg",
+        "/images/giants-causeway.jpg",
+        "/images/gelato.jpg",
+        "/images/gin-bottles.jpg",
+        "/images/summer-cocktails.jpg"
     ];
 
 
@@ -131,15 +139,30 @@ $(document).ready(function () {
         this.value = newVal;
     });
 
+
     var expirationDateInput = $("#CardExp");
 
-    expirationDateInput.keyup(function () {
-        var val = this.value.replace(/\//g, '');
+    expirationDateInput.on('keydown', function (e) {
+        if (e.key.match(/\d/)) {
+            var val = this.value.replace(/\//g, '');
+
+            if (val.length === 1) {
+                setTimeout(() => {
+                    this.value = this.value + '/';
+                }, 0);
+            }
+        }
+    });
+
+    expirationDateInput.on('input', function () {
+        var val = this.value.replace(/\//g, '').substr(0, 4);
         var newVal = '';
+
         for (var i = 0; i < val.length; i++) {
-            if (i == 2) newVal = newVal.concat('/');
+            if (i === 2) newVal = newVal.concat('/');
             newVal = newVal.concat(val[i]);
         }
+
         this.value = newVal;
     });
 

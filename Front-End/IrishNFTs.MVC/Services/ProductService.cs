@@ -12,7 +12,7 @@ namespace IrishNFTs.MVC.Services
 {
     public class ProductService : IProductService
     {
-        private const string ProductsApiUrl = "http://productsapi:5014/api/Product";
+        private const string ProductsApiUrl = "http://productsapi:5001/api/Product";
         private readonly HttpClient _httpClient;
 
         public ProductService(HttpClient httpClient)
@@ -20,9 +20,23 @@ namespace IrishNFTs.MVC.Services
             _httpClient = httpClient;
         }
 
-        public async Task<List<ProductViewModel>> GetAllProducts(int pageNum = 1, int pageSize = 12)
+        // public async Task<List<ProductViewModel>> GetAllProducts(int pageNum = 1, int pageSize = 12)
+        // {
+        //     var response = await _httpClient.GetAsync($"{ProductsApiUrl}?pageNum={pageNum}&pageSize={pageSize}");
+        //     response.EnsureSuccessStatusCode();
+        //     var productsJson = await response.Content.ReadAsStringAsync();
+        //     var products = JsonConvert.DeserializeObject<List<ProductViewModel>>(productsJson);
+        //     if (products == null)
+        //     {
+        //         throw new Exception("Unable to deserialize products");
+        //     }
+
+        //     return products;
+        // }
+
+        public async Task<List<ProductViewModel>> GetAllProducts(int pageNum = 1, int pageSize = 12, bool? inStockOnly = null)
         {
-            var response = await _httpClient.GetAsync($"{ProductsApiUrl}?pageNum={pageNum}&pageSize={pageSize}");
+            var response = await _httpClient.GetAsync($"{ProductsApiUrl}?pageNum={pageNum}&pageSize={pageSize}" + (inStockOnly.HasValue ? $"&inStockOnly={inStockOnly.Value}" : ""));
             response.EnsureSuccessStatusCode();
             var productsJson = await response.Content.ReadAsStringAsync();
             var products = JsonConvert.DeserializeObject<List<ProductViewModel>>(productsJson);
@@ -30,9 +44,8 @@ namespace IrishNFTs.MVC.Services
             {
                 throw new Exception("Unable to deserialize products");
             }
+
             return products;
-
-
         }
 
         public async Task<int> GetProductsCount()
@@ -43,6 +56,16 @@ namespace IrishNFTs.MVC.Services
             int count = JsonConvert.DeserializeObject<int>(countJson);
             return count;
         }
+
+        public async Task<int> GetInStockProductsCount()
+        {
+            var response = await _httpClient.GetAsync($"{ProductsApiUrl}/in-stock-count");
+            response.EnsureSuccessStatusCode();
+            var countJson = await response.Content.ReadAsStringAsync();
+            int count = JsonConvert.DeserializeObject<int>(countJson);
+            return count;
+        }
+
 
         public async Task<ProductViewModel> GetProductById(int id)
         {

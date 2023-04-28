@@ -14,7 +14,7 @@ WORKDIR /app
 
 COPY --from=build-env /app/out .
 
-EXPOSE 5069
-ENV ASPNETCORE_URLS=http://+:5069
+EXPOSE 5000
+ENV ASPNETCORE_URLS=http://+:5000
 ENV ASPNETCORE_ENVIRONMENT=Development
 ENTRYPOINT ["dotnet", "IrishNFTs.MVC.dll"]

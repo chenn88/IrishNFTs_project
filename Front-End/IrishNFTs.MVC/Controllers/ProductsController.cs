@@ -20,7 +20,7 @@ namespace IrishNFTs.MVC.Controllers
         {
             int pageNum = (page ?? 1);
             int pageSize = 12;
-            var products = await _productService.GetAllProducts(pageNum, pageSize);
+            var products = await _productService.GetAllProducts(pageNum, pageSize, true); // Pass true for inStockOnly
             int totalItemCount = await _productService.GetProductsCount();
             ViewBag.TotalItemCount = totalItemCount;
             ViewBag.PageNumber = pageNum;
@@ -31,7 +31,7 @@ namespace IrishNFTs.MVC.Controllers
         {
             int pageNum = (page ?? 1);
             int pageSize = 12;
-            var products = await _productService.GetAllProducts(pageNum, pageSize);
+            var products = await _productService.GetAllProducts(pageNum, pageSize, null);
             int totalItemCount = await _productService.GetProductsCount();
             ViewBag.TotalItemCount = totalItemCount;
             ViewBag.PageNumber = pageNum;
@@ -113,11 +113,10 @@ namespace IrishNFTs.MVC.Controllers
         [Authorize(Roles = "Admin")]
         public async Task<IActionResult> UpdateProductImgUrl(int id, string imgUrl)
         {
-            Console.WriteLine($"imgUrl: {imgUrl}");
+
             var content = new StringContent(JsonConvert.SerializeObject(imgUrl), Encoding.UTF8, "application/json");
             await _productService.UpdateProductImgUrl(id.ToString(), content);
             return RedirectToAction("ProductsAdmin");
-            Console.WriteLine($"imgUrl: {imgUrl}");
         }
     }
 }

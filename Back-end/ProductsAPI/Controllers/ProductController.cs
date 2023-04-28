@@ -16,21 +16,28 @@ namespace ProductsAPI.Controllers
             _context = context;
         }
 
-        //Get all products
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Product>>> GetProducts(int pageNum = 1, int pageSize = 12)
+        public async Task<ActionResult<IEnumerable<Product>>> GetProducts(int pageNum = 1, int pageSize = 12, bool? inStockOnly = null)
         {
             if (_context.Products == null)
             {
                 return NotFound();
             }
 
-            var products = await _context.Products
-            .OrderBy(p => p.ProductId)
-            .Skip((pageNum - 1) * pageSize)
-            .Take(pageSize)
-            .ToListAsync();
-            return Ok(products);
+            var products = _context.Products.AsQueryable();
+
+            if (inStockOnly.HasValue && inStockOnly.Value)
+            {
+                products = products.Where(p => p.InStock);
+            }
+
+            var paginatedProducts = await products
+                .OrderBy(p => p.ProductId)
+                .Skip((pageNum - 1) * pageSize)
+                .Take(pageSize)
+                .ToListAsync();
+
+            return Ok(paginatedProducts);
         }
 
         [HttpGet("count")]
@@ -40,6 +47,12 @@ namespace ProductsAPI.Controllers
             return Ok(count);
         }
 
+        [HttpGet("in-stock-count")]
+        public async Task<ActionResult<int>> GetInStockProductsCount()
+        {
+            int count = await _context.Products.CountAsync(p => p.InStock);
+            return Ok(count);
+        }
 
 
         //Get product by id
@@ -90,8 +103,6 @@ namespace ProductsAPI.Controllers
             return NoContent();
         }
 
-        // POST: api/Product
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
         public async Task<ActionResult<Product>> PostProduct(Product product)
         {

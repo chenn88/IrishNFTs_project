@@ -18,11 +18,11 @@ services:
       - irish-nfts
 
   irishnfts:
-    build: ./Front-end/IrishNFTs.MVC
+    build: ./Front-End/IrishNFTs.MVC
     image: irishnfts:mvc
     container_name: irishnfts_mvc
     ports:
-      - "5069:5069"
+      - "5000:5000"
     depends_on:
       - productsapi
       - ordersapi
@@ -36,7 +36,7 @@ services:
     image: irishnfts:productsapi
     container_name: irishnfts_productsapi
     ports:
-      - "5014:5014"
+      - "5001:5001"
     depends_on:
       - sqlserver
     networks:
@@ -47,7 +47,7 @@ services:
     image: irishnfts:ordersapi
     container_name: irishnfts_ordersapi
     ports:
-      - "5052:5052"
+      - "5002:5002"
     depends_on:
       - sqlserver
     networks:

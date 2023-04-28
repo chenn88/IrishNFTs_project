@@ -13,7 +13,7 @@ FROM mcr.microsoft.com/dotnet/aspnet:7.0
 WORKDIR /app
 COPY --from=build-env /app/out .
 
-EXPOSE 5014
-ENV ASPNETCORE_URLS=http://+:5014
+EXPOSE 5001
+ENV ASPNETCORE_URLS=http://+:5001
 ENV ASPNETCORE_ENVIRONMENT=Development
 ENTRYPOINT ["dotnet", "ProductsAPI.dll"]

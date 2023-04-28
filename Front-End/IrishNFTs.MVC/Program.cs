@@ -70,7 +70,7 @@ app.Run();
 
 async Task WaitForDatabaseToBeAvailableAsync(UserDbContext context)
 {
-    int retries = 5;
+    int retries = 6;
     var delayBetweenRetries = TimeSpan.FromSeconds(5);
 
     for (int i = 0; i < retries; i++)
@@ -91,7 +91,6 @@ async Task WaitForDatabaseToBeAvailableAsync(UserDbContext context)
                 throw;
 
             }
-
             await Task.Delay(delayBetweenRetries);
         }
     }

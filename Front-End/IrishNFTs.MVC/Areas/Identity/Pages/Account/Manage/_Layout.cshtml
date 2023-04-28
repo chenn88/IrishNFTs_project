@@ -1,12 +1,12 @@
 ﻿@{
-    if (ViewData.TryGetValue("ParentLayout", out var parentLayout) && parentLayout != null)
-    {
-        Layout = parentLayout.ToString();
-    }
-    else
-    {
-        Layout = "/Areas/Identity/Pages/_Layout.cshtml";
-    }
+if (ViewData.TryGetValue("ParentLayout", out var parentLayout) && parentLayout != null)
+{
+Layout = parentLayout.ToString();
+}
+else
+{
+Layout = "/Areas/Identity/Pages/_Layout.cshtml";
+}
 }
 <h1 class="text-center page-title d-flex justify-content-between px-5"><i
         class="bi bi-brush-fill"></i>@ViewData["Title"]<i class="bi bi-brush-fill"></i>

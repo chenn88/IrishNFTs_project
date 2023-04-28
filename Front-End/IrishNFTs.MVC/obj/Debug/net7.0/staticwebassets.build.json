@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "gTLZrheEGyr6eSKYSNESYKwHtuMnioIaH+bwz5e7i10=",
+  "Hash": "oX6QRvCwRnbYocgaJl79BktNRBrbPsrQysDCS5YdcgE=",
   "Source": "IrishNFTs.MVC",
   "BasePath": "_content/IrishNFTs.MVC",
   "Mode": "Default",
@@ -1137,6 +1137,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\antique-spoons.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\images\\architecture.jpg",
+      "SourceId": "IrishNFTs.MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\",
+      "BasePath": "_content/IrishNFTs.MVC",
+      "RelativePath": "images/architecture.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\architecture.jpg"
     },
     {
       "Identity": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\images\\art-marbles-in-jar.jpg",

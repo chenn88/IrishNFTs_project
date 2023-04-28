@@ -15,7 +15,7 @@ namespace OrdersAPI.Controllers
             _context = context;
         }
 
-        // GET: api/Payments
+
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Payment>>> GetPayments()
         {
@@ -26,7 +26,7 @@ namespace OrdersAPI.Controllers
             return await _context.Payments.ToListAsync();
         }
 
-        // GET: api/Payments/5
+        // Get payment by ID
         [HttpGet("{id}")]
         public async Task<ActionResult<Payment>> GetPayment(int id)
         {
@@ -44,6 +44,8 @@ namespace OrdersAPI.Controllers
             return payment;
         }
 
+        // Method to get payment by order id
+
         [HttpGet("order/{orderId}")]
         public async Task<ActionResult<Payment>> GetPaymentByOrderId(int orderId)
         {
@@ -57,7 +59,7 @@ namespace OrdersAPI.Controllers
             return payment;
         }
 
-        // PUT: api/Payments/5
+        // Put method
 
         [HttpPut("{id}")]
         public async Task<IActionResult> PutPayment(int id, Payment payment)
@@ -109,7 +111,7 @@ namespace OrdersAPI.Controllers
         }
 
 
-        // POST: api/Payments
+        // Post method to create payment
 
         [HttpPost]
         public async Task<ActionResult<Payment>> PostPayment(Payment payment)
@@ -123,6 +125,8 @@ namespace OrdersAPI.Controllers
 
             return CreatedAtAction("GetPayment", new { id = payment.PaymentId }, payment);
         }
+
+        //Patch method to void a payment (used as part of order cancellation)
 
         [HttpPatch("{id}/PaymentVoid")]
         public async Task<IActionResult> UpdatePaymentVoid(int id, [FromBody] bool paymentVoid)

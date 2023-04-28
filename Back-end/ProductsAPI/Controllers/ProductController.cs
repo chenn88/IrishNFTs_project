@@ -5,6 +5,7 @@ using ProductsAPI.Data;
 
 namespace ProductsAPI.Controllers
 {
+    //declaring the controller and DB Context
     [Route("api/[controller]")]
     [ApiController]
     public class ProductController : ControllerBase
@@ -16,6 +17,7 @@ namespace ProductsAPI.Controllers
             _context = context;
         }
 
+        //Get method to get all products (optional boolean included for inStockcheck)
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Product>>> GetProducts(int pageNum = 1, int pageSize = 12, bool? inStockOnly = null)
         {
@@ -26,11 +28,14 @@ namespace ProductsAPI.Controllers
 
             var products = _context.Products.AsQueryable();
 
+            //checking for product being in stock
+
             if (inStockOnly.HasValue && inStockOnly.Value)
             {
                 products = products.Where(p => p.InStock);
             }
 
+            // creating pagination
             var paginatedProducts = await products
                 .OrderBy(p => p.ProductId)
                 .Skip((pageNum - 1) * pageSize)
@@ -40,13 +45,14 @@ namespace ProductsAPI.Controllers
             return Ok(paginatedProducts);
         }
 
+        //Getting product count to apply pagination
         [HttpGet("count")]
         public async Task<ActionResult<int>> GetProductsCount()
         {
             int count = await _context.Products.CountAsync(p => p.InStock == true);
             return Ok(count);
         }
-
+        //Getting count of in stock products only to apply pagination
         [HttpGet("in-stock-count")]
         public async Task<ActionResult<int>> GetInStockProductsCount()
         {
@@ -73,7 +79,8 @@ namespace ProductsAPI.Controllers
             return product;
         }
 
-        // PUT: api/Product/5
+        // Put product (this is not implemented at the front end I opted for individual patch methods so I could edit different fields individual - this was great for typos etc..)
+
         [HttpPut("{id}")]
         public async Task<IActionResult> PutProduct(int id, Product product)
         {
@@ -103,6 +110,8 @@ namespace ProductsAPI.Controllers
             return NoContent();
         }
 
+        //Post method for adding a product
+
         [HttpPost]
         public async Task<ActionResult<Product>> PostProduct(Product product)
         {
@@ -111,17 +120,14 @@ namespace ProductsAPI.Controllers
                 return Problem("Entity set 'ProductContext.Products'  is null.");
             }
 
-
             _context.Products.Add(product);
-
-
 
             await _context.SaveChangesAsync();
 
             return CreatedAtAction("GetProduct", new { id = product.ProductId }, product);
         }
 
-
+        //Patch method to update the product inStock value
         [HttpPatch("{id}/InStock")]
         public async Task<IActionResult> UpdateProductStock(int id, [FromBody] bool inStock)
         {
@@ -138,7 +144,7 @@ namespace ProductsAPI.Controllers
             return Ok();
 
         }
-
+        //Patch method to edit product title
         [HttpPatch("{id}/Title")]
         public async Task<IActionResult> UpdateProductTitle(int id, [FromBody] string title)
         {
@@ -155,6 +161,7 @@ namespace ProductsAPI.Controllers
             return Ok();
         }
 
+        //Patch method to edit product price
         [HttpPatch("{id}/Price")]
         public async Task<IActionResult> UpdateProductPrice(int id, [FromBody] decimal price)
         {
@@ -169,6 +176,7 @@ namespace ProductsAPI.Controllers
 
             return Ok();
         }
+        //Patch method to edit product description
 
         [HttpPatch("{id}/Description")]
         public async Task<IActionResult> UpdateProductDescription(int id, [FromBody] string description)
@@ -185,6 +193,8 @@ namespace ProductsAPI.Controllers
             return Ok();
         }
 
+        //Patch method to update product category
+
         [HttpPatch("{id}/Category")]
         public async Task<IActionResult> UpdateProductCategory(int id, [FromBody] string category)
         {
@@ -200,6 +210,7 @@ namespace ProductsAPI.Controllers
             return Ok();
         }
 
+        //Patch method to update product image url
         [HttpPatch("{id}/ImgUrl")]
         public async Task<IActionResult> UpdateProductImgUrl(int id, [FromBody] string imgUrl)
         {
@@ -215,7 +226,7 @@ namespace ProductsAPI.Controllers
             return Ok();
         }
 
-        // DELETE: api/Product/5
+        // Method to delete product
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteProduct(int id)
         {
@@ -235,6 +246,7 @@ namespace ProductsAPI.Controllers
             return NoContent();
         }
 
+        //Boolean method to check if a product exists
         private bool ProductExists(int id)
         {
             return (_context.Products?.Any(e => e.ProductId == id)).GetValueOrDefault();

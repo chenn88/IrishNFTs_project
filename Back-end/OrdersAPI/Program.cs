@@ -4,9 +4,11 @@ using OrdersAPI.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+// Add ing services to the container.
 
 builder.Services.AddControllers();
+
+//Adding db context
 
 builder.Services.AddDbContext<OrderDbContext>(opt =>
 
@@ -14,7 +16,7 @@ builder.Services.AddDbContext<OrderDbContext>(opt =>
     opt.UseSqlServer(builder.Configuration.GetConnectionString("OrderDbConnection"));
 });
 
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
@@ -43,9 +45,12 @@ app.MapControllers();
 
 app.Run();
 
+
+//method to await database TCP connection Availability
+
 async Task WaitForDatabaseToBeAvailableAsync(OrderDbContext context)
 {
-    int retries = 5;
+    int retries = 6;
     var delayBetweenRetries = TimeSpan.FromSeconds(5);
 
     for (int i = 0; i < retries; i++)

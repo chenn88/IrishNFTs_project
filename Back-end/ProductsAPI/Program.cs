@@ -1,11 +1,11 @@
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Sqlite;
 using ProductsAPI.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
+//Adding DB context
 builder.Services.AddDbContext<ProductDbContext>(opt =>
 
 {
@@ -35,7 +35,7 @@ using (var scope = app.Services.CreateScope())
     var services = scope.ServiceProvider;
     var context = services.GetRequiredService<ProductDbContext>();
 
-    // Wait for database to be available and apply pending migrations
+    // Wait for database to be available and apply migrations
     await WaitForDatabaseToBeAvailableAsync(context);
 
     if (!context.Products.Any())
@@ -52,6 +52,9 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+var logger = app.Services.GetRequiredService<ILogger<Program>>();
+logger.LogInformation("Application started.");
+
 app.UseRouting();
 
 app.UseCors();
@@ -64,14 +67,14 @@ app.Run();
 
 async Task WaitForDatabaseToBeAvailableAsync(ProductDbContext context)
 {
-    int retries = 5;
+    int retries = 6;
     var delayBetweenRetries = TimeSpan.FromSeconds(5);
 
     for (int i = 0; i < retries; i++)
     {
         try
         {
-            // Apply pending migrations
+            // Applying pending migrations
             context.Database.Migrate();
             return;
         }
@@ -83,7 +86,6 @@ async Task WaitForDatabaseToBeAvailableAsync(ProductDbContext context)
                 Console.WriteLine($"Failed to apply migrations after {retries} attempts. Aborting...");
                 throw;
             }
-
             await Task.Delay(delayBetweenRetries);
         }
     }

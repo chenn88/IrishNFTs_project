@@ -21,6 +21,10 @@
       "PackagePath": "staticwebassets\\images\\antique-spoons.jpg"
     },
     {
+      "Id": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\images\\architecture.jpg",
+      "PackagePath": "staticwebassets\\images\\architecture.jpg"
+    },
+    {
       "Id": "C:\\Users\\Ciaran\\Projects\\DBS-advanced-web\\IrishNFTs\\front-end\\IrishNFTs.MVC\\wwwroot\\images\\art-marbles-in-jar.jpg",
       "PackagePath": "staticwebassets\\images\\art-marbles-in-jar.jpg"
     },

@@ -6,6 +6,7 @@ using ProductsAPI.Models;
 
 namespace ProductsAPI.Data
 {
+    //Database seeder for products - applied on startup off application
     public static class ProductDbSeeder
     {
 

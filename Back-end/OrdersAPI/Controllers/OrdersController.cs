@@ -15,7 +15,7 @@ namespace OrdersAPI.Controllers
             _context = context;
         }
 
-        // GET: api/Orders
+        //Method to get all orders (had planned on including this as part of the admin panel for the admin account but didn't have time to implement)
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Order>>> GetOrders()
         {
@@ -26,7 +26,8 @@ namespace OrdersAPI.Controllers
             return await _context.Orders.ToListAsync();
         }
 
-        // GET: api/Orders/5
+        //Method to get order by ID
+
         [HttpGet("{id}")]
         public async Task<ActionResult<Order>> GetOrder(int id)
         {
@@ -44,6 +45,8 @@ namespace OrdersAPI.Controllers
             return order;
         }
 
+        //Method to get order by user id (used for he "My Orders Page")
+
         [HttpGet("user/{userId}")]
         public async Task<ActionResult<IEnumerable<Order>>> GetOrdersByUserId(string userId)
         {
@@ -56,7 +59,7 @@ namespace OrdersAPI.Controllers
             return orders;
         }
 
-
+        //Put mehtod to edit order (again, no implementation of this)
 
         [HttpPut("{id}")]
         public async Task<IActionResult> PutOrder(int id, Order order)
@@ -87,7 +90,8 @@ namespace OrdersAPI.Controllers
             return NoContent();
         }
 
-        // POST: api/Orders
+        //Post method for creating an order
+
         [HttpPost]
         public async Task<ActionResult<Order>> PostOrder(Order order)
         {
@@ -103,6 +107,7 @@ namespace OrdersAPI.Controllers
 
 
 
+        //Patch method to change OrderCancellation status
 
         [HttpPatch("{id}/OrderCancellation")]
         public async Task<IActionResult> CancelOrder(int id, [FromBody] bool orderCancellation)
@@ -121,7 +126,9 @@ namespace OrdersAPI.Controllers
 
         }
 
-        // DELETE: api/Orders/5
+
+        //Method to delete an order (not implemented at front end either, but could be if required. Left here for that reason)
+
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteOrder(int id)
         {
@@ -140,6 +147,8 @@ namespace OrdersAPI.Controllers
 
             return NoContent();
         }
+
+        //Method to check if order exists
 
         private bool OrderExists(int id)
         {

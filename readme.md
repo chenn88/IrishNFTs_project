@@ -3,7 +3,7 @@
 ## Introduction
 Welcome to the IrishNFTs documentation. IrishNFTs was developed as a sample web application for buying and selling NFTs of original art-pieces. The user can browse for and purhchase one of the pieces for sale. Because the pieces for sale are unique, they will no longer be available once the user has purchased an NFT. If a user cancels their order, the at piece will show again as available. Admin features have also been enabled, allowing management of the content of the site via the admin account.
 <br>
-Developed initially for a college assignment, the project's intention was to focus on micro-services and to learn concepts relating to API development and the .NET framework. The project was developed using .NET 7, Bootstrap abd jQuery. 
+Developed initially for a college assignment, the project's intention was to focus on micro-services and to learn concepts relating to API development and the .NET framework. The project was developed using .NET 7, Bootstrap and jQuery. 
 <br>
 
 ### Technologies
